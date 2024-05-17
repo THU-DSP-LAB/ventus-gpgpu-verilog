@@ -1,4 +1,4 @@
-# ventus-gpgpu-verilog
+# Ventus GPGPU(Verilog Edition)
 
 GPGPU processor supporting RISCV-V extension, developed with Verilog.
 
@@ -12,7 +12,7 @@ Copyright (c) 2023-2024 C\*Core Technology Co.,Ltd,Suzhou.
 
 ## Architecture
 
-乘影的硬件架构文档在[这里](https://github.com/THU-DSP-LAB/ventus-gpgpu-verilog/blob/main/docs/ventus-gpgpu-verilog-release-v1.0-spec.pdf)
+乘影的硬件架构文档在[这里]()
 
 承影的硬件结构框图如下所示:
 
@@ -24,7 +24,7 @@ SM核的硬件结构框图如下所示:
 
 ## Getting started
 
-In `tb路径`:
+In `testcase/test_gpgpu_top`:
 
 - choose testcase(`tc_vecadd`,`tc_matadd`,`tc_gaussian`,`tc_nn`,`tc_bfs`)
 
@@ -35,7 +35,7 @@ In `tb路径`:
 ```shell
 make run-vcs
 ```
-- the tb will print the comparison result between software and hardware,`pass` or `fail`
+- the testbench will print the comparison result between software and hardware,`pass` or `fail`
 
 ## Acknowledgement
 
@@ -48,3 +48,4 @@ We refer to some open-source design when developing Ventus GPGPU.
 | FPU                       | [XiangShan](https://github.com/OpenXiangShan/XiangShan)                                      | We reused Array Multiplier in XiangShan. FPU design is also inspired by XiangShan  |
 | SFU                       | [openhwgroup](https://github.com/pulp-platform/fpu_div_sqrt_mvp)                             | Our SFU module is based on pulp-platform                                           |
 | Config, ...               | [rocket-chip](https://github.com/chipsalliance/rocket-chip)                                  | Some modules are sourced from RocketChip                                           |
+
