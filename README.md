@@ -12,7 +12,7 @@ Copyright (c) 2023-2024 C\*Core Technology Co.,Ltd,Suzhou.
 
 ## Architecture
 
-乘影的硬件架构文档在[这里]()
+乘影的硬件架构文档在[这里](https://github.com/THU-DSP-LAB/ventus-gpgpu-verilog/blob/main/docs/ventus-gpgpu-verilog-release-v1.0-spec.pdf)
 
 承影的硬件结构框图如下所示:
 
