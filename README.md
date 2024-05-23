@@ -1,3 +1,5 @@
+![](https://github.com/THU-DSP-LAB/ventus-gpgpu-verilog/blob/main/docs/images/ChinaCore_logo.jpg)
+
 # Ventus GPGPU(Verilog Edition)
 
 GPGPU processor supporting RISCV-V extension, developed with Verilog.
@@ -24,18 +26,30 @@ SM核的硬件结构框图如下所示:
 
 ## Getting started
 
-In `testcase/test_gpgpu_top`:
+以gassian用例为例，进入`testcase/test_gpgpu_axi_top/tc_gaussian`:
 
-- choose testcase(`tc_vecadd`,`tc_matadd`,`tc_gaussian`,`tc_nn`,`tc_bfs`)
+- 打开`tc.v`,选择case的warp数和thread数
 
-> 可以更换不同数量的warp和thread
+> 在`modules/define/define.v`目录下，修改`NUM_THREAD`，可以更改warp内的thread数量
 
-- use VCS to compile RTL:
+- 用VCS仿真:
 
 ```shell
 make run-vcs
 ```
-- the testbench will print the comparison result between software and hardware,`pass` or `fail`
+- 结果会显示`passed`或`failed`
+
+- 用Verdi查看波形
+
+```shell
+make verdi
+```
+
+- 如果不需要对外的AXI接口，则进入`testcase/test_gpgpu_top/tc_gaussian`，步骤同上
+
+## Case Description
+
+![](https://github.com/THU-DSP-LAB/ventus-gpgpu-verilog/blob/main/docs/images/test_20240527.png)
 
 ## Acknowledgement
 
@@ -48,4 +62,3 @@ We refer to some open-source design when developing Ventus GPGPU.
 | FPU                       | [XiangShan](https://github.com/OpenXiangShan/XiangShan)                                      | We reused Array Multiplier in XiangShan. FPU design is also inspired by XiangShan  |
 | SFU                       | [openhwgroup](https://github.com/pulp-platform/fpu_div_sqrt_mvp)                             | Our SFU module is based on pulp-platform                                           |
 | Config, ...               | [rocket-chip](https://github.com/chipsalliance/rocket-chip)                                  | Some modules are sourced from RocketChip                                           |
-
