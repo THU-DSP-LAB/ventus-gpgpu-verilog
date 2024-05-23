@@ -146,6 +146,7 @@ make verdi
 <td>8w4t</td>
 <td>pass</td>
 </tr>
+</table>
 
 ## Acknowledgement
 
