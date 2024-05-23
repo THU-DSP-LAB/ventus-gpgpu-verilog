@@ -1,4 +1,4 @@
-![](https://github.com/THU-DSP-LAB/ventus-gpgpu-verilog/blob/main/docs/images/ChinaCore_logo.jpg)
+![](https://github.com/THU-DSP-LAB/ventus-gpgpu-verilog/blob/docs/docs/images/ChinaCore_logo.jpg)
 
 # Ventus GPGPU(Verilog Edition)
 
@@ -14,15 +14,15 @@ Copyright (c) 2023-2024 C\*Core Technology Co.,Ltd,Suzhou.
 
 ## Architecture
 
-乘影的硬件架构文档在[这里](https://github.com/THU-DSP-LAB/ventus-gpgpu-verilog/blob/main/docs/ventus-gpgpu-verilog-release-v1.0-spec.pdf)
+乘影的硬件架构文档在[这里](https://github.com/THU-DSP-LAB/ventus-gpgpu-verilog/blob/docs/docs/ventus-gpgpu-verilog-release-v1.0-spec.pdf)
 
 承影的硬件结构框图如下所示:
 
-![](https://github.com/THU-DSP-LAB/ventus-gpgpu-verilog/blob/main/docs/images/ventus_verilog_arch1.png)
+![](https://github.com/THU-DSP-LAB/ventus-gpgpu-verilog/blob/docs/docs/images/ventus_verilog_arch1.png)
 
 SM核的硬件结构框图如下所示:
 
-![](https://github.com/THU-DSP-LAB/ventus-gpgpu-verilog/blob/main/docs/images/ventus_verilog_arch2.png)
+![](https://github.com/THU-DSP-LAB/ventus-gpgpu-verilog/blob/docs/docs/images/ventus_verilog_arch2.png)
 
 ## Getting started
 
@@ -49,7 +49,7 @@ make verdi
 
 ## Case Description
 
-![](https://github.com/THU-DSP-LAB/ventus-gpgpu-verilog/blob/main/docs/images/test_20240527.png)
+![](https://github.com/THU-DSP-LAB/ventus-gpgpu-verilog/blob/docs/docs/images/test_20240527.png)
 
 ## Acknowledgement
 
