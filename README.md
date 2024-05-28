@@ -49,7 +49,104 @@ make verdi
 
 ## Case Description
 
-![](https://github.com/THU-DSP-LAB/ventus-gpgpu-verilog/blob/docs/docs/images/test_20240527.png)
+<table>
+<tr>
+<th>测试集</th>
+<th>warp/thread数</th>
+<th>是否通过</th>
+<th>说明</th>
+</tr>
+<tr>
+<td rowspan=4>vecadd</td>
+<td>4w16t</td>
+<td>pass</td>
+<td rowspan=4>向量加</td>
+</tr>
+<tr>
+<td>4w8t</td>
+<td>pass</td>
+</tr>
+<tr>
+<td>4w32t</td>
+<td>pass</td>
+</tr>
+<tr>
+<td>8w4t</td>
+<td>pass</td>
+</tr>
+<tr>
+<td rowspan=3>matadd</td>
+<td>1w16t</td>
+<td>pass</td>
+<td rowspan=3>矩阵加</td>
+</tr>
+<tr>
+<td>2w8t</td>
+<td>pass</td>
+</tr>
+<tr>
+<td>4w4t</td>
+<td>pass</td>
+</tr>
+<tr>
+<td rowspan=5>nn</td>
+<td>2w16t</td>
+<td>pass</td>
+<td rowspan=5>最近邻内插法</td>
+</tr>
+<tr>
+<td>4w8t</td>
+<td>pass</td>
+</tr>
+<tr>
+<td>4w16t</td>
+<td>pass</td>
+</tr>
+<tr>
+<td>8w4t</td>
+<td>pass</td>
+</tr>
+<tr>
+<td>8w8t</td>
+<td>pass</td>
+</tr>
+<tr>
+<td rowspan=4>gassian</td>
+<td>1w16t</td>
+<td>pass</td>
+<td rowspan=4>高斯消元</td>
+</tr>
+<tr>
+<td>2w8t</td>
+<td>pass</td>
+</tr>
+<tr>
+<td>4w4t</td>
+<td>pass</td>
+</tr>
+<tr>
+<td>4w8t</td>
+<td>pass</td>
+</tr>
+<tr>
+<td rowspan=4>bfs</td>
+<td>2w16t</td>
+<td>pass</td>
+<td rowspan=4>宽度优先搜索算法</td>
+</tr>
+<tr>
+<td>4w8t</td>
+<td>pass</td>
+</tr>
+<tr>
+<td>4w32t</td>
+<td>pass</td>
+</tr>
+<tr>
+<td>8w4t</td>
+<td>pass</td>
+</tr>
+</table>
 
 ## Acknowledgement
 
