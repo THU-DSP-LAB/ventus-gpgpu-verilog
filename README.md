@@ -16,11 +16,11 @@ Copyright (c) 2023-2024 C\*Core Technology Co.,Ltd,Suzhou.
 
 乘影的硬件架构文档在[这里](https://github.com/THU-DSP-LAB/ventus-gpgpu-verilog/blob/docs/docs/ventus-gpgpu-verilog-release-v1.0-spec.pdf)
 
-承影的硬件结构框图如下所示:
+承影的硬件结构框图:
 
 ![](https://github.com/THU-DSP-LAB/ventus-gpgpu-verilog/blob/docs/docs/images/ventus_verilog_arch1.png)
 
-SM核的硬件结构框图如下所示:
+SM核的硬件结构框图:
 
 ![](https://github.com/THU-DSP-LAB/ventus-gpgpu-verilog/blob/docs/docs/images/ventus_verilog_arch2.png)
 
@@ -35,9 +35,11 @@ SM核的硬件结构框图如下所示:
 - 用VCS仿真:
 
 ```shell
-make run-vcs
+make run-vcs-4w4t
 ```
-- 结果会显示`passed`或`failed`
+- 结果会显示`pass`或`fail`:
+
+![](https://github.com/THU-DSP-LAB/ventus-gpgpu-verilog/blob/docs/docs/images/compile_example.png)
 
 - 用Verdi查看波形
 
