@@ -37,7 +37,7 @@ SM核的硬件结构框图:
 ```shell
 make run-vcs-4w4t
 ```
-- 结果会显示`pass`或`fail`:
+- 结果会显示`PASSED`或`FAILED`:
 
 ![](https://github.com/THU-DSP-LAB/ventus-gpgpu-verilog/blob/docs/docs/images/compile_example.jpg)
 
