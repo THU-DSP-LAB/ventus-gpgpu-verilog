@@ -39,7 +39,7 @@ make run-vcs-4w4t
 ```
 - 结果会显示`pass`或`fail`:
 
-![](https://github.com/THU-DSP-LAB/ventus-gpgpu-verilog/blob/docs/docs/images/compile_example.png)
+![](https://github.com/THU-DSP-LAB/ventus-gpgpu-verilog/blob/docs/docs/images/compile_example.jpg)
 
 - 用Verdi查看波形
 
