@@ -1,0 +1,46 @@
+Number of records: 53
+Finding the 5 closest neighbors.
+Number of platforms detected:1
+Platform 0:	Vendor: The pocl project
+[INFO]: [HW DRIVER] in [FILE] ventus.cpp,[LINE]25,[fn] vt_dev_open: vt_dev_open : hello world from ventus.cpp
+spike device initialize: allocating local memory: to allocate at 0x70000000 with 268435456 bytes 
+spike device initialize: allocating pc source memory: to allocate at 0x80000000 with 268435456 bytes 
+	Device: 0	Vendor: THU
+		Name: Ventus GPGPU device
+Using Platform 0 	 Device No 0 
+Creating GPU Context
+
+	nearestNeighbor_kernel.cl
+### Triple: riscv32, CPU: ventus-gpgpu
+to allocate at 0x90000000 with 4096 bytes 
+to copy to 0x90000000 with 424 bytes
+to allocate at 0x90001000 with 4096 bytes 
+notice that ventus hasn't support local buffer as argument yet.
+to allocate at 0x90002000 with 4096 bytes 
+to copy to 0x90002000 with 20 bytes
+to allocate at 0x90003000 with 262144 bytes 
+to allocate at 0x90043000 with 4096 bytes 
+to copy to 0x90043000 with 64 bytes
+arg gpgpu is numw:4,numt:16,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x10000,pdsbase:0x90003000,knlbase:0x90043000
+vaddr mem scope is -m0x70000000:0x90044000
+src file is object.riscv, run log is written to object.riscv.log
+spike -l --log-commits -p4 --isa rv32gcv_zfh --pc=0x80000000 -m0x70000000:0x90044000 --varch vlen:512,elen:32 --gpgpuarch numw:4,numt:16,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x10000,pdsbase:0x90003000,knlbase:0x90043000 --log=object.riscv.log object.riscv 
+warp number: 4 thread number = 16  workgroup number = 1 workgroup dimension:1*1*1 lds size: 0x1000 pds size: 0x10000 lds base: 0x70000000 pds base: 0x90003000 knl base: 0x90043000
+all warps reach the endprg. now proc 0 will end the simulation.
+Log file object.riscv.log renamed successfully to NearestNeighbor_0.log.
+to copy from 0x90001000 with 212 bytes
+# Records	Write(s) [size]		Kernel(s)	Read(s)  [size]		Total(s)
+53        	0.000025 [0.00MB]	0.661001	0.000007 [0.00MB]	0.661033
+
+Init: 37.930000
+MemAlloc: 0.006000
+HtoD: 0.024670
+Exec: 661.001160
+DtoH: 0.007423
+Close: 0.020000
+Total: 1006.005981
+1957  6 25 12 27 GORDON     37.1  86.6   24  792 --> Distance=7.872102
+1984  1 14  0 27 ALBERTO    37.3  94.5   28  655 --> Distance=8.575546
+1980 11  6 12 18 SANDY      15.8  84.2  153   47 --> Distance=15.338840
+1960 10 16  0  2 HELENE     14.5  79.9  157  781 --> Distance=18.500269
+1962  4  7  0  2 ERNESTO    50.2  90.7  161  182 --> Distance=20.212126

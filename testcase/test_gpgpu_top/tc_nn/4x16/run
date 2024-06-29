@@ -1,0 +1,3 @@
+#!/bin/bash
+
+./nn.out filelist.txt -r 5 -lat 30 -lng 90 -f ../../data -t -p 0 -d 0

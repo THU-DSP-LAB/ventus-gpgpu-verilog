@@ -1,0 +1,274 @@
+./bfs.out ../../data/bfs/graph32.txt -p 0 -d 0
+** Final POCL_DEBUG flags: 100000 
+Reading File
+number of platforms:1
+vendor is The pocl project
+[INFO]: [HW DRIVER] in [FILE] ventus.cpp,[LINE]25,[fn] vt_dev_open: vt_dev_open : hello world from ventus.cpp
+spike device initialize: allocating local memory: to allocate at 0x70000000 with 268435456 bytes 
+spike device initialize: allocating pc source memory: to allocate at 0x80000000 with 268435456 bytes 
+device number: 1
+Creating GPU Context
+### options: -DPOCL_DEVICE_ADDRESS_BITS=32 -D__USE_CLANG_OPENCL_C_H -xcl -Dinline= -I. -cl-kernel-arg-info  -D__ENDIAN_LITTLE__=1 -DCL_DEVICE_MAX_GLOBAL_VARIABLE_SIZE=0 -D__OPENCL_VERSION__=200 -cl-std=CL2.0 -D__OPENCL_C_VERSION__=200 -Dcl_khr_fp64=1 -D__opencl_c_generic_address_space=1 -D__opencl_c_named_address_space_builtins=1 -cl-ext=-all,+cl_khr_fp64,+__opencl_c_generic_address_space,+__opencl_c_named_address_space_builtins -fno-builtin -triple=riscv32 -target-cpu ventus-gpgpu user_options: 
+### Triple: riscv32, CPU: ventus-gpgpu
+Warning: the memory at  [0x90000000, 0x900000FF] has been realigned
+to the 4 KiB page size: [0x90000000, 0x90000FFF]
+Warning: the memory at  [0x90001000, 0x90001307] has been realigned
+to the 4 KiB page size: [0x90001000, 0x90001FFF]
+Warning: the memory at  [0x90002000, 0x9000201F] has been realigned
+to the 4 KiB page size: [0x90002000, 0x90002FFF]
+Warning: the memory at  [0x90003000, 0x9000301F] has been realigned
+to the 4 KiB page size: [0x90003000, 0x90003FFF]
+Warning: the memory at  [0x90004000, 0x9000401F] has been realigned
+to the 4 KiB page size: [0x90004000, 0x90004FFF]
+Warning: the memory at  [0x90005000, 0x9000507F] has been realigned
+to the 4 KiB page size: [0x90005000, 0x90005FFF]
+Warning: the memory at  [0x90006000, 0x90006000] has been realigned
+to the 4 KiB page size: [0x90006000, 0x90006FFF]
+[2024-03-05 09:51:32.541453549] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 632:
+  *** INFO ***  |    VENTUS |  Allocating kernel arg buffer entry:
+Warning: the memory at  [0x90007000, 0x9000701B] has been realigned
+to the 4 KiB page size: [0x90007000, 0x90007FFF]
+[2024-03-05 09:51:32.575074679] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 686:
+  *** INFO ***  |    VENTUS |  Kernel entry of "BFS_1" is : "0x800000b8"
+[2024-03-05 09:51:32.589564316] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 749:
+  *** INFO ***  |    VENTUS |  Vmem file has been written to object.vmem
+[2024-03-05 09:51:32.589854362] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 793:
+  *** INFO ***  |    VENTUS |  Preparing private memory of ventus:
+[2024-03-05 09:51:32.589867938] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 828:
+  *** INFO ***  |    VENTUS |  Allocating metadata space:
+Warning: the memory at  [0x90028000, 0x9002803F] has been realigned
+to the 4 KiB page size: [0x90028000, 0x90028FFF]
+[2024-03-05 09:51:32.589876445] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 838:
+  *** INFO ***  |    VENTUS |  kernel metadata has been written to 0x90028000
+[2024-03-05 09:51:32.597710488] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 632:
+  *** INFO ***  |    VENTUS |  Allocating kernel arg buffer entry:
+Warning: the memory at  [0x90007000, 0x90007013] has been realigned
+to the 4 KiB page size: [0x90007000, 0x90007FFF]
+[2024-03-05 09:51:32.622757307] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 686:
+  *** INFO ***  |    VENTUS |  Kernel entry of "BFS_2" is : "0x800001ec"
+[2024-03-05 09:51:32.637980294] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 749:
+  *** INFO ***  |    VENTUS |  Vmem file has been written to object.vmem
+[2024-03-05 09:51:32.638125190] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 793:
+  *** INFO ***  |    VENTUS |  Preparing private memory of ventus:
+[2024-03-05 09:51:32.638134310] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 828:
+  *** INFO ***  |    VENTUS |  Allocating metadata space:
+Warning: the memory at  [0x90028000, 0x9002803F] has been realigned
+to the 4 KiB page size: [0x90028000, 0x90028FFF]
+[2024-03-05 09:51:32.638140685] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 838:
+  *** INFO ***  |    VENTUS |  kernel metadata has been written to 0x90028000
+[2024-03-05 09:51:32.642782013] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 632:
+  *** INFO ***  |    VENTUS |  Allocating kernel arg buffer entry:
+Warning: the memory at  [0x90007000, 0x9000701B] has been realigned
+to the 4 KiB page size: [0x90007000, 0x90007FFF]
+[2024-03-05 09:51:32.662334661] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 686:
+  *** INFO ***  |    VENTUS |  Kernel entry of "BFS_1" is : "0x800000b8"
+[2024-03-05 09:51:32.676466668] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 749:
+  *** INFO ***  |    VENTUS |  Vmem file has been written to object.vmem
+[2024-03-05 09:51:32.676621594] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 793:
+  *** INFO ***  |    VENTUS |  Preparing private memory of ventus:
+[2024-03-05 09:51:32.676630429] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 828:
+  *** INFO ***  |    VENTUS |  Allocating metadata space:
+Warning: the memory at  [0x90028000, 0x9002803F] has been realigned
+to the 4 KiB page size: [0x90028000, 0x90028FFF]
+[2024-03-05 09:51:32.676637843] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 838:
+  *** INFO ***  |    VENTUS |  kernel metadata has been written to 0x90028000
+[2024-03-05 09:51:32.684713997] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 632:
+  *** INFO ***  |    VENTUS |  Allocating kernel arg buffer entry:
+Warning: the memory at  [0x90007000, 0x90007013] has been realigned
+to the 4 KiB page size: [0x90007000, 0x90007FFF]
+[2024-03-05 09:51:32.705191507] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 686:
+  *** INFO ***  |    VENTUS |  Kernel entry of "BFS_2" is : "0x800001ec"
+[2024-03-05 09:51:32.736644177] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 749:
+  *** INFO ***  |    VENTUS |  Vmem file has been written to object.vmem
+[2024-03-05 09:51:32.736791625] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 793:
+  *** INFO ***  |    VENTUS |  Preparing private memory of ventus:
+[2024-03-05 09:51:32.736806302] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 828:
+  *** INFO ***  |    VENTUS |  Allocating metadata space:
+Warning: the memory at  [0x90028000, 0x9002803F] has been realigned
+to the 4 KiB page size: [0x90028000, 0x90028FFF]
+[2024-03-05 09:51:32.736813490] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 838:
+  *** INFO ***  |    VENTUS |  kernel metadata has been written to 0x90028000
+to allocate at 0x90000000 with 4096 bytes 
+to copy to 0x90000000 with 256 bytes
+to allocate at 0x90001000 with 4096 bytes 
+to copy to 0x90001000 with 776 bytes
+to allocate at 0x90002000 with 4096 bytes 
+to copy to 0x90002000 with 32 bytes
+to allocate at 0x90003000 with 4096 bytes 
+to copy to 0x90003000 with 32 bytes
+to allocate at 0x90004000 with 4096 bytes 
+to copy to 0x90004000 with 32 bytes
+to allocate at 0x90005000 with 4096 bytes 
+to copy to 0x90005000 with 128 bytes
+to allocate at 0x90006000 with 4096 bytes 
+to copy to 0x90006000 with 1 bytes
+notice that ventus hasn't support local buffer as argument yet.
+to allocate at 0x90007000 with 4096 bytes 
+to copy to 0x90007000 with 28 bytes
+to allocate at 0x90008000 with 131072 bytes 
+to allocate at 0x90028000 with 4096 bytes 
+to copy to 0x90028000 with 64 bytes
+arg gpgpu is numw:2,numt:16,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x10000000,pdsbase:0x90008000,knlbase:0x90028000,currwgid:0
+vaddr mem scope is -m0x70000000:0x90029000
+src file is object.riscv, run log is written to object.riscv.log
+spike -l --log-commits -p2 --isa rv32gcv_zfh --pc=0x80000000 -m0x70000000:0x90029000 --varch vlen:512,elen:32 --gpgpuarch numw:2,numt:16,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x10000000,pdsbase:0x90008000,knlbase:0x90028000,currwgid:0 --log=object.riscv.log object.riscv 
+Log file object.riscv.log renamed successfully to BFS_1_0.log.
+notice that ventus hasn't support local buffer as argument yet.
+to allocate at 0x90007000 with 4096 bytes 
+to copy to 0x90007000 with 20 bytes
+to allocate at 0x90008000 with 131072 bytes 
+to allocate at 0x90028000 with 4096 bytes 
+to copy to 0x90028000 with 64 bytes
+arg gpgpu is numw:2,numt:16,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x10000000,pdsbase:0x90008000,knlbase:0x90028000,currwgid:0
+vaddr mem scope is -m0x70000000:0x90029000
+src file is object.riscv, run log is written to object.riscv.log
+spike -l --log-commits -p2 --isa rv32gcv_zfh --pc=0x80000000 -m0x70000000:0x90029000 --varch vlen:512,elen:32 --gpgpuarch numw:2,numt:16,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x10000000,pdsbase:0x90008000,knlbase:0x90028000,currwgid:0 --log=object.riscv.log object.riscv 
+Log file object.riscv.log renamed successfully to BFS_2_0.log.
+to copy from 0x90006000 with 1 bytes
+to copy to 0x90006000 with 1 bytes
+notice that ventus hasn't support local buffer as argument yet.
+to allocate at 0x90007000 with 4096 bytes 
+to copy to 0x90007000 with 28 bytes
+to allocate at 0x90008000 with 131072 bytes 
+to allocate at 0x90028000 with 4096 bytes 
+to copy to 0x90028000 with 64 bytes
+arg gpgpu is numw:2,numt:16,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x10000000,pdsbase:0x90008000,knlbase:0x90028000,currwgid:0
+vaddr mem scope is -m0x70000000:0x90029000
+src file is object.riscv, run log is written to object.riscv.log
+spike -l --log-commits -p2 --isa rv32gcv_zfh --pc=0x80000000 -m0x70000000:0x90029000 --varch vlen:512,elen:32 --gpgpuarch numw:2,numt:16,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x10000000,pdsbase:0x90008000,knlbase:0x90028000,currwgid:0 --log=object.riscv.log object.riscv 
+Log file object.riscv.log renamed successfully to BFS_1_1.log.
+notice that ventus hasn't support local buffer as argument yet.
+to allocate at 0x90007000 with 4096 bytes 
+to copy to 0x90007000 with 20 bytes
+to allocate at 0x90008000 with 131072 bytes 
+to allocate at 0x90028000 with 4096 bytes 
+to copy to 0x90028000 with 64 bytes
+arg gpgpu is numw:2,numt:16,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x10000000,pdsbase:0x90008000,knlbase:0x90028000,currwgid:0
+vaddr mem scope is -m0x70000000:0x90029000
+src file is object.riscv, run log is written to object.riscv.log
+spike -l --log-commits -p2 --isa rv32gcv_zfh --pc=0x80000000 -m0x70000000:0x90029000 --varch vlen:512,elen:32 --gpgpuarch numw:2,numt:16,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x10000000,pdsbase:0x90008000,knlbase:0x90028000,currwgid:0 --log=object.riscv.log object.riscv 
+Log [2024-03-05 09:51:32.740721612] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 632:
+  *** INFO ***  |    VENTUS |  Allocating kernel arg buffer entry:
+Warning: the memory at  [0x90007000, 0x9000701B] has been realigned
+to the 4 KiB page size: [0x90007000, 0x90007FFF]
+[2024-03-05 09:51:32.759702163] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 686:
+  *** INFO ***  |    VENTUS |  Kernel entry of "BFS_1" is : "0x800000b8"
+[2024-03-05 09:51:32.777412509] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 749:
+  *** INFO ***  |    VENTUS |  Vmem file has been written to object.vmem
+[2024-03-05 09:51:32.777556989] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 793:
+  *** INFO ***  |    VENTUS |  Preparing private memory of ventus:
+[2024-03-05 09:51:32.777565670] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 828:
+  *** INFO ***  |    VENTUS |  Allocating metadata space:
+Warning: the memory at  [0x90028000, 0x9002803F] has been realigned
+to the 4 KiB page size: [0x90028000, 0x90028FFF]
+[2024-03-05 09:51:32.777572120] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 838:
+  *** INFO ***  |    VENTUS |  kernel metadata has been written to 0x90028000
+[2024-03-05 09:51:32.783762535] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 632:
+  *** INFO ***  |    VENTUS |  Allocating kernel arg buffer entry:
+Warning: the memory at  [0x90007000, 0x90007013] has been realigned
+to the 4 KiB page size: [0x90007000, 0x90007FFF]
+[2024-03-05 09:51:32.809353473] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 686:
+  *** INFO ***  |    VENTUS |  Kernel entry of "BFS_2" is : "0x800001ec"
+[2024-03-05 09:51:32.822727073] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 749:
+  *** INFO ***  |    VENTUS |  Vmem file has been written to object.vmem
+[2024-03-05 09:51:32.822914660] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 793:
+  *** INFO ***  |    VENTUS |  Preparing private memory of ventus:
+[2024-03-05 09:51:32.822923245] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 828:
+  *** INFO ***  |    VENTUS |  Allocating metadata space:
+Warning: the memory at  [0x90028000, 0x9002803F] has been realigned
+to the 4 KiB page size: [0x90028000, 0x90028FFF]
+[2024-03-05 09:51:32.822930215] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 838:
+  *** INFO ***  |    VENTUS |  kernel metadata has been written to 0x90028000
+[2024-03-05 09:51:32.826879665] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 632:
+  *** INFO ***  |    VENTUS |  Allocating kernel arg buffer entry:
+Warning: the memory at  [0x90007000, 0x9000701B] has been realigned
+to the 4 KiB page size: [0x90007000, 0x90007FFF]
+[2024-03-05 09:51:32.847197672] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 686:
+  *** INFO ***  |    VENTUS |  Kernel entry of "BFS_1" is : "0x800000b8"
+[2024-03-05 09:51:32.862802458] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 749:
+  *** INFO ***  |    VENTUS |  Vmem file has been written to object.vmem
+[2024-03-05 09:51:32.862978287] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 793:
+  *** INFO ***  |    VENTUS |  Preparing private memory of ventus:
+[2024-03-05 09:51:32.862984940] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 828:
+  *** INFO ***  |    VENTUS |  Allocating metadata space:
+Warning: the memory at  [0x90028000, 0x9002803F] has been realigned
+to the 4 KiB page size: [0x90028000, 0x90028FFF]
+[2024-03-05 09:51:32.862992064] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 838:
+  *** INFO ***  |    VENTUS |  kernel metadata has been written to 0x90028000
+[2024-03-05 09:51:32.867889082] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 632:
+  *** INFO ***  |    VENTUS |  Allocating kernel arg buffer entry:
+Warning: the memory at  [0x90007000, 0x90007013] has been realigned
+to the 4 KiB page size: [0x90007000, 0x90007FFF]
+[2024-03-05 09:51:32.889092308] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 686:
+  *** INFO ***  |    VENTUS |  Kernel entry of "BFS_2" is : "0x800001ec"
+[2024-03-05 09:51:32.901591010] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 749:
+  *** INFO ***  |    VENTUS |  Vmem file has been written to object.vmem
+[2024-03-05 09:51:32.901746231] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 793:
+  *** INFO ***  |    VENTUS |  Preparing private memory of ventus:
+[2024-03-05 09:51:32.901755247] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 828:
+  *** INFO ***  |    VENTUS |  Allocating metadata space:
+Warning: the memory at  [0x90028000, 0x9002803F] has been realigned
+to the 4 KiB page size: [0x90028000, 0x90028FFF]
+[2024-03-05 09:51:32.901762010] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 838:
+  *** INFO ***  |    VENTUS |  kernel metadata has been written to 0x90028000
+file object.riscv.log renamed successfully to BFS_2_1.log.
+to copy from 0x90006000 with 1 bytes
+to copy to 0x90006000 with 1 bytes
+notice that ventus hasn't support local buffer as argument yet.
+to allocate at 0x90007000 with 4096 bytes 
+to copy to 0x90007000 with 28 bytes
+to allocate at 0x90008000 with 131072 bytes 
+to allocate at 0x90028000 with 4096 bytes 
+to copy to 0x90028000 with 64 bytes
+arg gpgpu is numw:2,numt:16,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x10000000,pdsbase:0x90008000,knlbase:0x90028000,currwgid:0
+vaddr mem scope is -m0x70000000:0x90029000
+src file is object.riscv, run log is written to object.riscv.log
+spike -l --log-commits -p2 --isa rv32gcv_zfh --pc=0x80000000 -m0x70000000:0x90029000 --varch vlen:512,elen:32 --gpgpuarch numw:2,numt:16,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x10000000,pdsbase:0x90008000,knlbase:0x90028000,currwgid:0 --log=object.riscv.log object.riscv 
+Log file object.riscv.log renamed successfully to BFS_1_2.log.
+notice that ventus hasn't support local buffer as argument yet.
+to allocate at 0x90007000 with 4096 bytes 
+to copy to 0x90007000 with 20 bytes
+to allocate at 0x90008000 with 131072 bytes 
+to allocate at 0x90028000 with 4096 bytes 
+to copy to 0x90028000 with 64 bytes
+arg gpgpu is numw:2,numt:16,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x10000000,pdsbase:0x90008000,knlbase:0x90028000,currwgid:0
+vaddr mem scope is -m0x70000000:0x90029000
+src file is object.riscv, run log is written to object.riscv.log
+spike -l --log-commits -p2 --isa rv32gcv_zfh --pc=0x80000000 -m0x70000000:0x90029000 --varch vlen:512,elen:32 --gpgpuarch numw:2,numt:16,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x10000000,pdsbase:0x90008000,knlbase:0x90028000,currwgid:0 --log=object.riscv.log object.riscv 
+Log file object.riscv.log renamed successfully to BFS_2_2.log.
+to copy from 0x90006000 with 1 bytes
+to copy to 0x90006000 with 1 bytes
+notice that ventus hasn't support local buffer as argument yet.
+to allocate at 0x90007000 with 4096 bytes 
+to copy to 0x90007000 with 28 bytes
+to allocate at 0x90008000 with 131072 bytes 
+to allocate at 0x90028000 with 4096 bytes 
+to copy to 0x90028000 with 64 bytes
+arg gpgpu is numw:2,numt:16,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x10000000,pdsbase:0x90008000,knlbase:0x90028000,currwgid:0
+vaddr mem scope is -m0x70000000:0x90029000
+src file is object.riscv, run log is written to object.riscv.log
+spike -l --log-commits -p2 --isa rv32gcv_zfh --pc=0x80000000 -m0x70000000:0x90029000 --varch vlen:512,elen:32 --gpgpuarch numw:2,numt:16,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x10000000,pdsbase:0x90008000,knlbase:0x90028000,currwgid:0 --log=object.riscv.log object.riscv 
+Log file object.riscv.log renamed successfully to BFS_1_3.log.
+notice that ventus hasn't support local buffer as argument yet.
+to allocate at 0x90007000 with 4096 bytes 
+to copy to 0x90007000 with 20 bytes
+to allocate at 0x90008000 with 131072 bytes 
+to allocate at 0x90028000 with 4096 bytes 
+to copy to 0x90028000 with 64 bytes
+arg gpgpu is numw:2,numt:16,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x10000000,pdsbase:0x90008000,knlbase:0x90028000,currwgid:0
+vaddr mem scope is -m0x70000000:0x90029000
+src file is object.riscv, run log is written to object.riscv.log
+spike -l --log-commits -p2 --isa rv32gcv_zfh --pc=0x80000000 -m0x70000000:0x90029000 --varch vlen:512,elen:32 --gpgpuarch numw:2,numt:16,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x10000000,pdsbase:0x90008000,knlbase:0x90028000,currwgid:0 --log=object.riscv.log object.riscv 
+Log file object.riscv.log renamed successfully to BFS_2_3.log.
+to copy from 0x90006000 with 1 bytes
+to copy from 0x90005000 with 128 bytes
+Init: 372.509003
+MemAlloc: 0.008000
+HtoD: 0.052573
+Exec: 363.042175
+DtoH: 0.025667
+Close: 0.039000
+Total: 736.703003
+cpu_results:  0 1 3 2 2 3 1 3 2 1 3 2 2 2 1 2 2 3 2 2 2 1 2 3 1 2 3 2 2 2 1 2
+gpu_results:  0 1 3 2 2 3 1 3 2 1 3 2 2 2 1 2 2 3 2 2 2 1 2 3 1 2 3 2 2 2 1 2
+--cambine:passed:-)

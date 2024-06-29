@@ -1,0 +1,172 @@
+./gaussian.out -p 0 -d 0 -f ../../data/gaussian/matrix5.txt -v
+WG size of kernel 1 = 0, WG size of kernel 2= 0 X 0
+Read file from ../../data/gaussian/matrix5.txt 
+Number of platforms detected:1
+Checking For OpenCl Compatible Devices
+Platform 0
+vendor: The pocl project
+[INFO]: [HW DRIVER] in [FILE] ventus.cpp,[LINE]25,[fn] vt_dev_open: vt_dev_open : hello world from ventus.cpp
+spike device initialize: allocating local memory: to allocate at 0x70000000 with 268435456 bytes 
+spike device initialize: allocating pc source memory: to allocate at 0x80000000 with 268435456 bytes 
+no of devices: 1
+	device 0: THU Ventus GPGPU device
+
+Using Platform 0 Device 0 
+Creating GPU Context
+Profiling enabled
+The input matrix a is:
+2.00e-01 -1.00e+00 3.00e-01 1.00e+00 7.00e-01 
+0.00e+00 2.00e-01 -7.00e-01 -9.00e-01 -5.00e-01 
+3.00e-01 3.00e-01 1.00e-01 -6.00e-01 3.00e-01 
+-5.00e-01 4.00e-01 4.00e-01 8.00e-01 -1.00e-01 
+-9.00e-01 1.00e-01 4.00e-01 3.00e-01 -3.00e-01 
+
+The input array b is:
+1.50e+00 -7.70e-01 -7.80e-01 2.40e-01 -5.00e-02 
+
+	gaussianElim_kernels.cl
+### Triple: riscv32, CPU: ventus-gpgpu
+to allocate at 0x90000000 with 4096 bytes 
+to copy to 0x90000000 with 100 bytes
+to allocate at 0x90001000 with 4096 bytes 
+to copy to 0x90001000 with 20 bytes
+to allocate at 0x90002000 with 4096 bytes 
+to copy to 0x90002000 with 100 bytes
+notice that ventus hasn't support local buffer as argument yet.
+to allocate at 0x90003000 with 4096 bytes 
+to copy to 0x90003000 with 20 bytes
+to allocate at 0x90004000 with 32768 bytes 
+to allocate at 0x9000c000 with 4096 bytes 
+to copy to 0x9000c000 with 64 bytes
+arg gpgpu is numw:1,numt:8,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x8000,pdsbase:0x90004000,knlbase:0x9000c000
+vaddr mem scope is -m0x70000000:0x9000d000
+src file is object.riscv, run log is written to object.riscv.log
+spike -l --log-commits -p1 --isa rv32gcv_zfh --pc=0x80000000 -m0x70000000:0x9000d000 --varch vlen:256,elen:32 --gpgpuarch numw:1,numt:8,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x8000,pdsbase:0x90004000,knlbase:0x9000c000 --log=object.riscv.log object.riscv 
+warp number: 1 thread number = 8  workgroup number = 1 workgroup dimension:1*1*1 lds size: 1000 pds size: 8000 lds base: 70000000 pds base: 90004000 knl base: 9000c000
+all warps reach the endprg. now proc 0 will end the simulation.
+Log file object.riscv.log renamed successfully to Fan1_0.log.
+notice that ventus hasn't support local buffer as argument yet.
+to allocate at 0x9000d000 with 4096 bytes 
+to copy to 0x9000d000 with 20 bytes
+to allocate at 0x9000e000 with 131072 bytes 
+to allocate at 0x9002e000 with 4096 bytes 
+to copy to 0x9002e000 with 64 bytes
+arg gpgpu is numw:4,numt:8,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x8000,pdsbase:0x9000e000,knlbase:0x9002e000
+vaddr mem scope is -m0x70000000:0x9002f000
+src file is object.riscv, run log is written to object.riscv.log
+spike -l --log-commits -p4 --isa rv32gcv_zfh --pc=0x80000000 -m0x70000000:0x9002f000 --varch vlen:256,elen:32 --gpgpuarch numw:4,numt:8,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x8000,pdsbase:0x9000e000,knlbase:0x9002e000 --log=object.riscv.log object.riscv 
+warp number: 4 thread number = 8  workgroup number = 1 workgroup dimension:1*1*1 lds size: 1000 pds size: 8000 lds base: 70000000 pds base: 9000e000 knl base: 9002e000
+all warps reach the endprg. now proc 0 will end the simulation.
+Log file object.riscv.log renamed successfully to Fan2_0.log.
+notice that ventus hasn't support local buffer as argument yet.
+to allocate at 0x9002f000 with 4096 bytes 
+to copy to 0x9002f000 with 20 bytes
+to allocate at 0x90030000 with 32768 bytes 
+to allocate at 0x90038000 with 4096 bytes 
+to copy to 0x90038000 with 64 bytes
+arg gpgpu is numw:1,numt:8,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x8000,pdsbase:0x90030000,knlbase:0x90038000
+vaddr mem scope is -m0x70000000:0x90039000
+src file is object.riscv, run log is written to object.riscv.log
+spike -l --log-commits -p1 --isa rv32gcv_zfh --pc=0x80000000 -m0x70000000:0x90039000 --varch vlen:256,elen:32 --gpgpuarch numw:1,numt:8,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x8000,pdsbase:0x90030000,knlbase:0x90038000 --log=object.riscv.log object.riscv 
+warp number: 1 thread number = 8  workgroup number = 1 workgroup dimension:1*1*1 lds size: 1000 pds size: 8000 lds base: 70000000 pds base: 90030000 knl base: 90038000
+all warps reach the endprg. now proc 0 will end the simulation.
+Log file object.riscv.log renamed successfully to Fan1_1.log.
+notice that ventus hasn't support local buffer as argument yet.
+to allocate at 0x90039000 with 4096 bytes 
+to copy to 0x90039000 with 20 bytes
+to allocate at 0x9003a000 with 131072 bytes 
+to allocate at 0x9005a000 with 4096 bytes 
+to copy to 0x9005a000 with 64 bytes
+arg gpgpu is numw:4,numt:8,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x8000,pdsbase:0x9003a000,knlbase:0x9005a000
+vaddr mem scope is -m0x70000000:0x9005b000
+src file is object.riscv, run log is written to object.riscv.log
+spike -l --log-commits -p4 --isa rv32gcv_zfh --pc=0x80000000 -m0x70000000:0x9005b000 --varch vlen:256,elen:32 --gpgpuarch numw:4,numt:8,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x8000,pdsbase:0x9003a000,knlbase:0x9005a000 --log=object.riscv.log object.riscv 
+warp number: 4 thread number = 8  workgroup number = 1 workgroup dimension:1*1*1 lds size: 1000 pds size: 8000 lds base: 70000000 pds base: 9003a000 knl base: 9005a000
+all warps reach the endprg. now proc 0 will end the simulation.
+Log file object.riscv.log renamed successfully to Fan2_1.log.
+notice that ventus hasn't support local buffer as argument yet.
+to allocate at 0x9005b000 with 4096 bytes 
+to copy to 0x9005b000 with 20 bytes
+to allocate at 0x9005c000 with 32768 bytes 
+to allocate at 0x90064000 with 4096 bytes 
+to copy to 0x90064000 with 64 bytes
+arg gpgpu is numw:1,numt:8,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x8000,pdsbase:0x9005c000,knlbase:0x90064000
+vaddr mem scope is -m0x70000000:0x90065000
+src file is object.riscv, run log is written to object.riscv.log
+spike -l --log-commits -p1 --isa rv32gcv_zfh --pc=0x80000000 -m0x70000000:0x90065000 --varch vlen:256,elen:32 --gpgpuarch numw:1,numt:8,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x8000,pdsbase:0x9005c000,knlbase:0x90064000 --log=object.riscv.log object.riscv 
+warp number: 1 thread number = 8  workgroup number = 1 workgroup dimension:1*1*1 lds size: 1000 pds size: 8000 lds base: 70000000 pds base: 9005c000 knl base: 90064000
+all warps reach the endprg. now proc 0 will end the simulation.
+Log file object.riscv.log renamed successfully to Fan1_2.log.
+notice that ventus hasn't support local buffer as argument yet.
+to allocate at 0x90065000 with 4096 bytes 
+to copy to 0x90065000 with 20 bytes
+to allocate at 0x90066000 with 131072 bytes 
+to allocate at 0x90086000 with 4096 bytes 
+to copy to 0x90086000 with 64 bytes
+arg gpgpu is numw:4,numt:8,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x8000,pdsbase:0x90066000,knlbase:0x90086000
+vaddr mem scope is -m0x70000000:0x90087000
+src file is object.riscv, run log is written to object.riscv.log
+spike -l --log-commits -p4 --isa rv32gcv_zfh --pc=0x80000000 -m0x70000000:0x90087000 --varch vlen:256,elen:32 --gpgpuarch numw:4,numt:8,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x8000,pdsbase:0x90066000,knlbase:0x90086000 --log=object.riscv.log object.riscv 
+warp number: 4 thread number = 8  workgroup number = 1 workgroup dimension:1*1*1 lds size: 1000 pds size: 8000 lds base: 70000000 pds base: 90066000 knl base: 90086000
+all warps reach the endprg. now proc 0 will end the simulation.
+Log file object.riscv.log renamed successfully to Fan2_2.log.
+notice that ventus hasn't support local buffer as argument yet.
+to allocate at 0x90087000 with 4096 bytes 
+to copy to 0x90087000 with 20 bytes
+to allocate at 0x90088000 with 32768 bytes 
+to allocate at 0x90090000 with 4096 bytes 
+to copy to 0x90090000 with 64 bytes
+arg gpgpu is numw:1,numt:8,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x8000,pdsbase:0x90088000,knlbase:0x90090000
+vaddr mem scope is -m0x70000000:0x90091000
+src file is object.riscv, run log is written to object.riscv.log
+spike -l --log-commits -p1 --isa rv32gcv_zfh --pc=0x80000000 -m0x70000000:0x90091000 --varch vlen:256,elen:32 --gpgpuarch numw:1,numt:8,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x8000,pdsbase:0x90088000,knlbase:0x90090000 --log=object.riscv.log object.riscv 
+warp number: 1 thread number = 8  workgroup number = 1 workgroup dimension:1*1*1 lds size: 1000 pds size: 8000 lds base: 70000000 pds base: 90088000 knl base: 90090000
+all warps reach the endprg. now proc 0 will end the simulation.
+Log file object.riscv.log renamed successfully to Fan1_3.log.
+notice that ventus hasn't support local buffer as argument yet.
+to allocate at 0x90091000 with 4096 bytes 
+to copy to 0x90091000 with 20 bytes
+to allocate at 0x90092000 with 131072 bytes 
+to allocate at 0x900b2000 with 4096 bytes 
+to copy to 0x900b2000 with 64 bytes
+arg gpgpu is numw:4,numt:8,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x8000,pdsbase:0x90092000,knlbase:0x900b2000
+vaddr mem scope is -m0x70000000:0x900b3000
+src file is object.riscv, run log is written to object.riscv.log
+spike -l --log-commits -p4 --isa rv32gcv_zfh --pc=0x80000000 -m0x70000000:0x900b3000 --varch vlen:256,elen:32 --gpgpuarch numw:4,numt:8,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x8000,pdsbase:0x90092000,knlbase:0x900b2000 --log=object.riscv.log object.riscv 
+warp number: 4 thread number = 8  workgroup number = 1 workgroup dimension:1*1*1 lds size: 1000 pds size: 8000 lds base: 70000000 pds base: 90092000 knl base: 900b2000
+all warps reach the endprg. now proc 0 will end the simulation.
+Log file object.riscv.log renamed successfully to Fan2_3.log.
+to copy from 0x90000000 with 100 bytes
+to copy from 0x90001000 with 20 bytes
+to copy from 0x90002000 with 100 bytes
+Matrix Size	Write(s) [size]		Kernel(s)	Read(s)  [size]		Total(s)
+5x5      	0.031769 [0.00MB]	6374.325684	0.029945 [0.00MB]	6374.387207
+
+The result of matrix m is: 
+0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00 
+0.00e+00 0.00e+00 0.00e+00 0.00e+00 0.00e+00 
+1.50e+00 9.00e+00 0.00e+00 0.00e+00 0.00e+00 
+-2.50e+00 -1.05e+01 -1.04e+00 0.00e+00 0.00e+00 
+-4.50e+00 -2.20e+01 -2.29e+00 -1.21e+01 0.00e+00 
+
+The result of matrix a is: 
+2.00e-01 -1.00e+00 3.00e-01 1.00e+00 7.00e-01 
+0.00e+00 2.00e-01 -7.00e-01 -9.00e-01 -5.00e-01 
+7.45e-09 -7.45e-08 5.95e+00 6.00e+00 3.75e+00 
+7.45e-09 -6.41e-08 9.93e-08 1.02e-01 3.08e-01 
+3.73e-08 -2.98e-08 1.94e-07 -3.22e-08 4.17e+00 
+
+The result of array b is: 
+1.50e+00 -7.70e-01 3.90e+00 -3.11e-02 -1.67e+00 
+
+The final solution is: 
+4.00e-01 -8.00e-01 -1.76e-06 9.00e-01 -4.00e-01 
+
+Init: 38.490002
+MemAlloc: 0.007000
+HtoD: 0.031769
+Exec: 6374.325684
+DtoH: 0.029945
+Close: 0.086000
+Total: 6734.404785
+# ./gaussian.out -s 4 -p 0 -d 0
