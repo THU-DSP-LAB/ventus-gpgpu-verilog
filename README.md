@@ -34,7 +34,7 @@ SM核的硬件结构框图:
 
 ## 开始
 
-以gassian用例为例，进入`testcase/test_gpgpu_axi_top/tc_gaussian`:
+以gaussian用例为例，进入`testcase/test_gpgpu_axi_top/tc_gaussian`:
 
 - 打开`tc.v`,选择case的warp数和thread数
 
@@ -97,24 +97,24 @@ make verdi
 <td>1w32t</td>
 <td>pass</td>
 <td>2808</td>
-<td>4\*4矩阵加法</td>
+<td>4*4矩阵加法</td>
 </tr>
 <td>1w16t</td>
 <td>pass</td>
 <td>2500</td>
-<td>4\*4矩阵加法</td>
+<td>4*4矩阵加法</td>
 </tr>
 <tr>
 <td>2w8t</td>
 <td>pass</td>
 <td>2640</td>
-<td>4\*4矩阵加法</td>
+<td>4*4矩阵加法</td>
 </tr>
 <tr>
 <td>4w4t</td>
 <td>pass</td>
 <td>4054</td>
-<td>4\*4矩阵加法</td>
+<td>4*4矩阵加法</td>
 </tr>
 <tr>
 <td rowspan=5>nn：最近邻内插法</td>
@@ -148,7 +148,7 @@ make verdi
 <td>53个点找最近的5个点</td>
 </tr>
 <tr>
-<td rowspan=4>gassian：高斯消元</td>
+<td rowspan=4>gaussian：高斯消元</td>
 <td>1w16t</td>
 <td>pass</td>
 <td>10151</td>
