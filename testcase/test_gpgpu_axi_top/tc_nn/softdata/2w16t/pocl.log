@@ -1,0 +1,66 @@
+** Final POCL_DEBUG flags: 100000 
+Number of records: 19
+Finding the 5 closest neighbors.
+Number of platforms detected:1
+Platform 0:	Vendor: The pocl project
+[INFO]: [HW DRIVER] in [FILE] ventus.cpp,[LINE]25,[fn] vt_dev_open: vt_dev_open : hello world from ventus.cpp
+spike device initialize: allocating local memory: to allocate at 0x70000000 with 268435456 bytes 
+spike device initialize: allocating pc source memory: to allocate at 0x80000000 with 268435456 bytes 
+	Device: 0	Vendor: THU
+		Name: Ventus GPGPU device
+Using Platform 0 	 Device No 0 
+Creating GPU Context
+
+	nearestNeighbor_kernel.cl
+### options: -DPOCL_DEVICE_ADDRESS_BITS=32 -D__USE_CLANG_OPENCL_C_H -xcl -Dinline= -I. -cl-kernel-arg-info  -D__ENDIAN_LITTLE__=1 -DCL_DEVICE_MAX_GLOBAL_VARIABLE_SIZE=0 -D__OPENCL_VERSION__=200 -cl-std=CL2.0 -D__OPENCL_C_VERSION__=200 -Dcl_khr_fp64=1 -D__opencl_c_generic_address_space=1 -D__opencl_c_named_address_space_builtins=1 -cl-ext=-all,+cl_khr_fp64,+__opencl_c_generic_address_space,+__opencl_c_named_address_space_builtins -fno-builtin -triple=riscv32 -target-cpu ventus-gpgpu user_options: 
+### Triple: riscv32, CPU: ventus-gpgpu
+Warning: the memory at  [0x90000000, 0x90000097] has been realigned
+to the 4 KiB page size: [0x90000000, 0x90000FFF]
+Warning: the memory at  [0x90001000, 0x9000104B] has been realigned
+to the 4 KiB page size: [0x90001000, 0x90001FFF]
+[2024-03-05 12:51:50.364316264] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 632:
+  *** INFO ***  |    VENTUS |  Allocating kernel arg buffer entry:
+Warning: the memory at  [0x90002000, 0x90002013] has been realigned
+to the 4 KiB page size: [0x90002000, 0x90002FFF]
+[2024-03-05 12:51:50.383781534] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 686:
+  *** INFO ***  |    VENTUS |  Kernel entry of "NearestNeighbor" is : "0x800000b8"
+[2024-03-05 12:51:50.396217540] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 749:
+  *** INFO ***  |    VENTUS |  Vmem file has been written to object.vmem
+[2024-03-05 12:51:50.396396794] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 793:
+  *** INFO ***  |    VENTUS |  Preparing private memory of ventus:
+[2024-03-05 12:51:50.396405737] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 828:
+  *** INFO ***  |    VENTUS |  Allocating metadata space:
+Warning: the memory at  [0x90023000, 0x9002303F] has been realigned
+to the 4 KiB page size: [0x90023000, 0x90023FFF]
+[2024-03-05 12:51:50.396415114] POCL: in fn void pocl_ventus_run(void *, _cl_command_node *) at line 838:
+  *** INFO ***  |    VENTUS |  kernel metadata has been written to 0x90023000
+to allocate at 0x90000000 with 4096 bytes 
+to copy to 0x90000000 with 152 bytes
+to allocate at 0x90001000 with 4096 bytes 
+notice that ventus hasn't support local buffer as argument yet.
+to allocate at 0x90002000 with 4096 bytes 
+to copy to 0x90002000 with 20 bytes
+to allocate at 0x90003000 with 131072 bytes 
+to allocate at 0x90023000 with 4096 bytes 
+to copy to 0x90023000 with 64 bytes
+arg gpgpu is numw:2,numt:16,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x10000000,pdsbase:0x90003000,knlbase:0x90023000,currwgid:0
+vaddr mem scope is -m0x70000000:0x90024000
+src file is object.riscv, run log is written to object.riscv.log
+spike -l --log-commits -p2 --isa rv32gcv_zfh --pc=0x80000000 -m0x70000000:0x90024000 --varch vlen:512,elen:32 --gpgpuarch numw:2,numt:16,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x10000000,pdsbase:0x90003000,knlbase:0x90023000,currwgid:0 --log=object.riscv.log object.riscv 
+Log file object.riscv.log renamed successfully to NearestNeighbor_0.log.
+to copy from 0x90001000 with 76 bytes
+# Records	Write(s) [size]		Kernel(s)	Read(s)  [size]		Total(s)
+19        	0.000026 [0.00MB]	0.037593	0.000005 [0.00MB]	0.037623
+
+Init: 38.494999
+MemAlloc: 0.005000
+HtoD: 0.026077
+Exec: 37.592545
+DtoH: 0.004767
+Close: 0.008000
+Total: 381.601013
+1957  6 25 12 27 GORDON     37.1  86.6   24  792 --> Distance=7.872102
+1980 11  6 12 18 SANDY      15.8  84.2  153   47 --> Distance=15.338840
+1951  3  8  6  5 ISAAC       9.6 104.8   21  322 --> Distance=25.203176
+1962 10  4 12 11 LESLIE     51.7 110.4   64  161 --> Distance=29.783386
+1962 10  4 12 11 LESLIE     51.7 110.4   64  161 --> Distance=30.173164

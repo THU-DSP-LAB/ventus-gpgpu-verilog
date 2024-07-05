@@ -1,0 +1,3110 @@
+Command: vcs -full64 -LDFLAGS -Wl,--no-as-needed -R -sverilog -timescale=1ns/1ps \
+-f ../common/run.f -debug_access+all +fsdb+functions -l simv.log +define+CASE_4W32T \
+
+                         Chronologic VCS (TM)
+       Version Q-2020.03-SP1_Full64 -- Tue Jun 11 21:39:40 2024
+               Copyright (c) 1991-2020 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Warning-[ILLGO] Invalid option used
+  Invalid option '-2012' must be ignored.
+  Please check vcs -help for supported options.
+
+Parsing design file '../common/host_inter.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../common/host_inter.v'.
+Parsing design file '../common/test_gpu_axi_top.sv'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../common/test_gpu_axi_top.sv'.
+Parsing design file '../common/gen_rst.v'
+Parsing design file '../common/gen_clk.v'
+Parsing design file '../common/axi_ram.sv'
+Parsing design file './tc.v'
+Parsing design file '../../../modules/define/define.v'
+Parsing design file '../../../modules/gpgpu_top/cta_top/cta/gpu_interface.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/cta_top/cta/gpu_interface.v'.
+Parsing design file '../../../modules/gpgpu_top/cta_top/cta/wg_slot_id_convert_opt.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/cta_top/cta/wg_slot_id_convert_opt.v'.
+Parsing design file '../../../modules/gpgpu_top/cta_top/cta/ram.v'
+Parsing design file '../../../modules/gpgpu_top/cta_top/cta/top_resource_table.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/cta_top/cta/top_resource_table.v'.
+Parsing design file '../../../modules/gpgpu_top/cta_top/cta/allocator_neo.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/cta_top/cta/allocator_neo.v'.
+Parsing design file '../../../modules/gpgpu_top/cta_top/cta/dis_controller.v'
+Parsing design file '../../../modules/gpgpu_top/cta_top/cta/prefer_select.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/cta_top/cta/prefer_select.v'.
+Parsing design file '../../../modules/gpgpu_top/cta_top/cta/throttling_engine.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/cta_top/cta/throttling_engine.v'.
+Parsing design file '../../../modules/gpgpu_top/cta_top/cta/inflight_wg_buffer.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/cta_top/cta/inflight_wg_buffer.v'.
+Parsing design file '../../../modules/gpgpu_top/cta_top/cta/wg_resource_table_neo.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/cta_top/cta/wg_resource_table_neo.v'.
+Parsing design file '../../../modules/gpgpu_top/cta_top/cta/resource_table.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/cta_top/cta/resource_table.v'.
+Parsing design file '../../../modules/gpgpu_top/cta_top/cta/cam_allocator.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/cta_top/cta/cam_allocator.v'.
+Parsing design file '../../../modules/gpgpu_top/cta_top/cta/cam_allocator_neo.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/cta_top/cta/cam_allocator_neo.v'.
+Parsing design file '../../../modules/gpgpu_top/cta_top/cta/cu_handler.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/cta_top/cta/cu_handler.v'.
+Parsing design file '../../../modules/gpgpu_top/cta_top/cta/cta_scheduler.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/cta_top/cta/cta_scheduler.v'.
+Parsing design file '../../../modules/gpgpu_top/cta_top/cta/resource_table_group.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/cta_top/cta/resource_table_group.v'.
+Parsing design file '../../../modules/gpgpu_top/cta_top/cta_interface.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/cta_top/cta_interface.v'.
+Parsing design file '../../../modules/gpgpu_top/cta_top/wf_done_interface_single.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/cta_top/wf_done_interface_single.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/l1cache/dcache/tag_access/tag_checker.v'
+Parsing design file '../../../modules/gpgpu_top/sm/l1cache/dcache/tag_access/tag_access_top_v2.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/l1cache/dcache/tag_access/tag_access_top_v2.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/l1cache/dcache/l1_dcache.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/l1cache/dcache/l1_dcache.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/l1cache/dcache/dcache_control.v'
+Parsing design file '../../../modules/gpgpu_top/sm/l1cache/dcache/get_data_access_banken.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/l1cache/dcache/get_data_access_banken.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/l1cache/dcache/gen_data_map_per_byte.v'
+Parsing design file '../../../modules/gpgpu_top/sm/l1cache/dcache/l1_mshr/get_entry_status_req.v'
+Parsing design file '../../../modules/gpgpu_top/sm/l1cache/dcache/l1_mshr/l1_mshr.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/l1cache/dcache/l1_mshr/l1_mshr.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/l1cache/dcache/l1_mshr/get_entry_status_rsp.v'
+Parsing design file '../../../modules/gpgpu_top/sm/l1cache/dcache/dcache_wshr.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/l1cache/dcache/dcache_wshr.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/l1cache/dcache/gen_data_map_same_word.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/l1cache/dcache/gen_data_map_same_word.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/l1cache/common/lru_matrix.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/l1cache/common/lru_matrix.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/l1cache/common/sram_template_l1d_tag.v'
+Parsing design file '../../../modules/gpgpu_top/sm/l1cache/common/sram_template.v'
+Parsing design file '../../../modules/gpgpu_top/sm/l1cache/icache/tag_checker_icache.v'
+Parsing design file '../../../modules/gpgpu_top/sm/l1cache/icache/get_entry_status.v'
+Parsing design file '../../../modules/gpgpu_top/sm/l1cache/icache/instruction_cache.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/l1cache/icache/instruction_cache.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/l1cache/icache/mshr_icache.v'
+Parsing design file '../../../modules/gpgpu_top/sm/l1cache/icache/get_setid.v'
+Parsing design file '../../../modules/gpgpu_top/sm/l1cache/icache/tag_access_icache.v'
+Parsing design file '../../../modules/gpgpu_top/sm/l1cache/shared_memory/bankconflict_arb.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/l1cache/shared_memory/bankconflict_arb.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/l1cache/shared_memory/sharemem.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/l1cache/shared_memory/sharemem.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu/common_cells/near_path.v'
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu/common_cells/shift_right_jam.v'
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu/common_cells/far_path.v'
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu/common_cells/rounding.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu/common_cells/rounding.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu/common_cells/lza.v'
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu/common_cells/clz.v'
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu/fcmp.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu/fcmp.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu/fpmv.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu/fpmv.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu/fp_to_int_core.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu/fp_to_int_core.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu/fadd_pipe.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu/fadd_pipe.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu/fcmp_core.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu/fcmp_core.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu/scalar_fpu.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu/scalar_fpu.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu/fmul_pipe.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu/fmul_pipe.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu/fp_to_int.v'
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu/int_to_fp.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu/int_to_fp.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu/int_to_fp_postnorm.v'
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu/fma.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu/fma.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu/int_to_fp_prenorm.v'
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/fpu/vfpu.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/fpu/vfpu.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu_no_ctrl/scalar_fpu_no_ctrl.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu_no_ctrl/scalar_fpu_no_ctrl.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu_no_ctrl/fmul_pipe_no_ctrl.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu_no_ctrl/fmul_pipe_no_ctrl.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu_no_ctrl/fp_to_int_no_ctrl.v'
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu_no_ctrl/int_to_fp_no_ctrl.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu_no_ctrl/int_to_fp_no_ctrl.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu_no_ctrl/fma_no_ctrl.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu_no_ctrl/fma_no_ctrl.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu_no_ctrl/fcmp_no_ctrl.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu_no_ctrl/fcmp_no_ctrl.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu_no_ctrl/fpmv_no_ctrl.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu_no_ctrl/fpmv_no_ctrl.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu_no_ctrl/fadd_pipe_no_ctrl.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpu_no_ctrl/fadd_pipe_no_ctrl.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/fpu/vfpu_v2.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/fpu/vfpu_v2.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpuexe.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpuexe.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/operand_collector/crossbar.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/operand_collector/crossbar.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/operand_collector/inst_demux.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/operand_collector/inst_demux.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/operand_collector/operand_arbiter.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/operand_collector/operand_arbiter.v'.
+
+Warning-[IPDW] Identifier previously declared
+../../../modules/gpgpu_top/sm/pipeline/operand_collector/operand_arbiter.v, 346
+  Second declaration for identifier 'j' ignored
+  Identifier 'j' previously declared as genvar. 
+  [../../../modules/gpgpu_top/sm/pipeline/operand_collector/operand_arbiter.v,
+  274]
+
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/operand_collector/operandcollector_top.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/operand_collector/operandcollector_top.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/operand_collector/collector_unit.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/operand_collector/collector_unit.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/operand_collector/vector_regfile_bank.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/operand_collector/vector_regfile_bank.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/operand_collector/gen_imm.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/operand_collector/gen_imm.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/operand_collector/scalar_regfile_bank.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/operand_collector/scalar_regfile_bank.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/issue.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/issue.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/simt_stack/branch_join_stack.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/simt_stack/branch_join_stack.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/simt_stack/simt_stack.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/simt_stack/simt_stack.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/lsu/input_fifo.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/lsu/input_fifo.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/lsu/lsu_exe.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/lsu/lsu_exe.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/lsu/shiftboard.v'
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/lsu/mshr_reg.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/lsu/mshr_reg.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/lsu/addrcalculate.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/lsu/addrcalculate.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/lsu/rsp_arb.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/lsu/rsp_arb.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/lsu/byte_extract.v'
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/lsu/lsu2wb.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/lsu/lsu2wb.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/lsu/mshr_backup.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/lsu/mshr_backup.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/pipe.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/pipe.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/sfu_v2/float_div_mvp/defs_div_sqrt_mvp.sv'
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/sfu_v2/float_div_mvp/div_sqrt_top_mvp.sv'
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/sfu_v2/float_div_mvp/cf_math_pkg.sv'
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/sfu_v2/float_div_mvp/iteration_div_sqrt_mvp.sv'
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/sfu_v2/float_div_mvp/nrbd_nrsc_mvp.sv'
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+../../../modules/gpgpu_top/sm/pipeline/sfu_v2/float_div_mvp/nrbd_nrsc_mvp.sv, 34
+$unit
+  Package 'defs_div_sqrt_mvp' already wildcard imported. 
+  Ignoring defs_div_sqrt_mvp::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/sfu_v2/float_div_mvp/control_mvp.sv'
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+../../../modules/gpgpu_top/sm/pipeline/sfu_v2/float_div_mvp/control_mvp.sv, 41
+$unit
+  Package 'defs_div_sqrt_mvp' already wildcard imported. 
+  Ignoring defs_div_sqrt_mvp::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/sfu_v2/float_div_mvp/preprocess_mvp.sv'
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+../../../modules/gpgpu_top/sm/pipeline/sfu_v2/float_div_mvp/preprocess_mvp.sv, 35
+$unit
+  Package 'defs_div_sqrt_mvp' already wildcard imported. 
+  Ignoring defs_div_sqrt_mvp::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/sfu_v2/float_div_mvp/lzc.sv'
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/sfu_v2/float_div_mvp/norm_div_sqrt_mvp.sv'
+
+Note-[SV-LCM-PPWI] Package previously wildcard imported
+../../../modules/gpgpu_top/sm/pipeline/sfu_v2/float_div_mvp/norm_div_sqrt_mvp.sv, 44
+$unit
+  Package 'defs_div_sqrt_mvp' already wildcard imported. 
+  Ignoring defs_div_sqrt_mvp::*
+  See the SystemVerilog LRM(1800-2005), section 19.2.1.
+
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/sfu_v2/int_div.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/sfu_v2/int_div.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/sfu_v2/sfu_exe.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/sfu_v2/sfu_exe.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/warp_scheduler/pc_align.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/warp_scheduler/pc_align.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/warp_scheduler/pc_control.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/warp_scheduler/pc_control.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/warp_scheduler/warp_scheduler.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/warp_scheduler/warp_scheduler.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/valu/alu.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/valu/alu.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/valu/valu.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/valu/valu.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/valu/valu_top.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/valu/valu_top.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/valu/valu_v2.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/valu/valu_v2.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/tensor/tc_dot_product.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/tensor/tc_dot_product.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/tensor/tensor_core_fp32.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/tensor/tensor_core_fp32.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/tensor/tc_mul_pipe.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/tensor/tc_mul_pipe.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/tensor/fadd_s1.v'
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/tensor/fadd_s2.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/tensor/fadd_s2.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/tensor/tensor_core_exe.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/tensor/tensor_core_exe.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/tensor/fmul_s1.v'
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/tensor/fmul_s2.v'
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/tensor/fmul_s3.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/tensor/fmul_s3.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/tensor/naivemultiplier.v'
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/tensor/tc_add_pipe.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/tensor/tc_add_pipe.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/ibuffer/slowdown.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/ibuffer/slowdown.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/ibuffer/ibuffer.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/ibuffer/ibuffer.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/writeback.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/writeback.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/branch_back.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/branch_back.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/ibuffer2issue.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/ibuffer2issue.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/vmul/wallace_adder_18.v'
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/vmul/full_adder.v'
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/vmul/vmul.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/vmul/vmul.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/vmul/array_multiplier.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/vmul/array_multiplier.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/vmul/mult_32.v'
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/vmul/vmul_top.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/vmul/vmul_top.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/vmul/vmul_v2.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/vmul/vmul_v2.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/vmul/booth.v'
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/csr/csrfile.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/csr/csrfile.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/csr/csrexe.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/csr/csrexe.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/aluexe.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/aluexe.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/decodeUnit.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/decodeUnit.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/scoreboard.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/scoreboard.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/sm_wrapper.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/sm_wrapper.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/cta2warp.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/cta2warp.v'.
+Parsing design file '../../../modules/gpgpu_top/sm/l1cache_arb.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm/l1cache_arb.v'.
+Parsing design file '../../../modules/gpgpu_top/gpgpu_axi_top.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/gpgpu_axi_top.v'.
+Parsing design file '../../../modules/gpgpu_top/sm2cluster_arb.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/sm2cluster_arb.v'.
+Parsing design file '../../../modules/gpgpu_top/axi4lite_2_cta.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/axi4lite_2_cta.v'.
+Parsing design file '../../../modules/gpgpu_top/l2_distribute.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/l2_distribute.v'.
+Parsing design file '../../../modules/gpgpu_top/l2cache/Listbuffer.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/l2cache/Listbuffer.v'.
+Parsing design file '../../../modules/gpgpu_top/l2cache/sinkA.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/l2cache/sinkA.v'.
+Parsing design file '../../../modules/gpgpu_top/l2cache/sinkD.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/l2cache/sinkD.v'.
+Parsing design file '../../../modules/gpgpu_top/l2cache/Listbuffer_no_push_opc_put_source.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/l2cache/Listbuffer_no_push_opc_put_source.v'.
+Parsing design file '../../../modules/gpgpu_top/l2cache/MSHR.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/l2cache/MSHR.v'.
+Parsing design file '../../../modules/gpgpu_top/l2cache/Scheduler.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/l2cache/Scheduler.v'.
+Parsing design file '../../../modules/gpgpu_top/l2cache/banked_store.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/l2cache/banked_store.v'.
+Parsing design file '../../../modules/gpgpu_top/l2cache/SourceA.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/l2cache/SourceA.v'.
+Parsing design file '../../../modules/gpgpu_top/l2cache/directory_test.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/l2cache/directory_test.v'.
+Parsing design file '../../../modules/gpgpu_top/l2cache/sourceD.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/l2cache/sourceD.v'.
+Parsing design file '../../../modules/gpgpu_top/axi4_adapter/axi4_adapter.sv'
+Parsing design file '../../../modules/gpgpu_top/axi4_adapter/axi4_adapter_top.sv'
+Parsing design file '../../../modules/gpgpu_top/axi4_adapter/axi4_cut.sv'
+Parsing design file '../../../modules/gpgpu_top/axi4_adapter/spill_register.sv'
+Parsing design file '../../../modules/gpgpu_top/axi4_adapter/spill_register_flushable.sv'
+Parsing design file '../../../modules/gpgpu_top/GPGPU_top.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/GPGPU_top.v'.
+Parsing design file '../../../modules/gpgpu_top/cluster_to_l2_arb.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/gpgpu_top/cluster_to_l2_arb.v'.
+Parsing design file '../../../modules/common_cell/stream_fifo_flow_true.v'
+Parsing design file '../../../modules/common_cell/stream_fifo_hasflush_true_no_empty_full.v'
+Parsing design file '../../../modules/common_cell/fifo_with_count.v'
+Parsing design file '../../../modules/common_cell/find_first.v'
+Parsing design file '../../../modules/common_cell/stream_fifo_with_incount_useSRAM.v'
+Parsing design file '../../../modules/common_cell/stream_fifo_hasflush_true.v'
+Parsing design file '../../../modules/common_cell/input_reverse.v'
+Parsing design file '../../../modules/common_cell/one2bin.v'
+Parsing design file '../../../modules/common_cell/bin2one.v'
+Parsing design file '../../../modules/common_cell/stream_fifo_useSRAM.v'
+Parsing design file '../../../modules/common_cell/fixed_pri_arb.v'
+Parsing design file '../../../modules/common_cell/stream_fifo.v'
+Parsing design file '../../../modules/common_cell/pop_cnt.v'
+Parsing design file '../../../modules/common_cell/round_robin_arb.v'
+Parsing included file '../../../modules/define/define.v'.
+Back to file '../../../modules/common_cell/round_robin_arb.v'.
+Parsing design file '../../../modules/common_cell/stream_fifo_pipe_true.v'
+Parsing design file '../../../modules/common_cell/stream_fifo_pipe_true_with_count.v'
+Parsing design file '../../../modules/common_cell/dualportSRAM.v'
+Parsing design file '../../../modules/common_cell/fifo_with_flush.v'
+Parsing design file '../../../modules/common_cell/fifo.v'
+Parsing design file '../../../modules/define/undefine.v'
+Top Level Modules:
+       test_gpu_axi_top
+TimeScale is 1 ns / 1 ps
+
+Warning-[SIOB] Select index out of bounds
+../../../modules/common_cell/pop_cnt.v, 34
+"count[((DATA_WID * 0) - 1)-:DATA_WID]"
+  The select index is out of declared bounds : [27:0].
+  In module instance : warp_active_cnt 
+  In module : pop_cnt.
+
+
+Warning-[SIOB] Select index out of bounds
+../../../modules/common_cell/pop_cnt.v, 34
+"count[((DATA_WID * 0) - 1)-:DATA_WID]"
+  The select index is out of declared bounds : [185:0].
+  In module instance : cnt_if_mask cnt_else_mask 
+  In module : pop_cnt.
+
+
+Warning-[SIOB] Select index out of bounds
+../../../modules/common_cell/pop_cnt.v, 34
+"count[((DATA_WID * 0) - 1)-:DATA_WID]"
+  The select index is out of declared bounds : [1:0].
+  In module instance : used_count used_count 
+  In module : pop_cnt.
+
+
+Warning-[SIOB] Select index out of bounds
+../../../modules/common_cell/pop_cnt.v, 34
+"count[((DATA_WID * 0) - 1)-:DATA_WID]"
+  The select index is out of declared bounds : [8:0].
+  In module instance : used_count 
+  In module : pop_cnt.
+
+
+Warning-[SIOB] Select index out of bounds
+../../../modules/common_cell/pop_cnt.v, 34
+"count[((DATA_WID * 0) - 1)-:DATA_WID]"
+  The select index is out of declared bounds : [154:0].
+  In module instance : COUNT[0].bankreq_count COUNT[1].bankreq_count 
+  In module : pop_cnt.
+
+Notice: Ports coerced to inout, use -notice for details
+Starting vcs inline pass...
+
+112 modules and 0 UDP read.
+recompiling module tc
+recompiling module near_path
+recompiling module clz
+recompiling module int_to_fp_prenorm
+recompiling module operandcollector_top
+recompiling module collector_unit
+6 of 112 modules done
+	However, due to incremental compilation, only 6 modules need to be compiled. 
+make[1]: Entering directory `/project/crv/users/qxchen/GPGPU/testcase/test_gpgpu_axi_top/tc_bfs/csrc' \
+
+make[1]: Warning: File `filelist.cu' has modification time 22 s in the future
+make[2]: Warning: File `filelist.cu' has modification time 22 s in the future
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+make[2]: Warning: File `filelist.cu' has modification time 22 s in the future
+ld -shared  -Bsymbolic  -o .//../simv.daidir//_cuarc0.so objs/amcQw_d.o 
+rm -f _cuarc0.so
+make[2]: warning:  Clock skew detected.  Your build may be incomplete.
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv    -Wl,--no-as-needed -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir \
+-Wl,-rpath=./simv.daidir -Wl,-rpath=/cadtools/synopsys/vcs/vcs_vQ-2020.03-SP1/linux64/lib \
+-L/cadtools/synopsys/vcs/vcs_vQ-2020.03-SP1/linux64/lib  -Wl,-rpath-link=./  /usr/lib64/libnuma.so.1 \
+_51280_archive_1.so _prev_archive_1.so _cuarc0.so  SIM_l.o      rmapats_mop.o rmapats.o \
+rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o          -lvirsim -lerrorinf -lsnpsmalloc \
+-lvfs    -lvcsnew -lsimprofile -luclinative /cadtools/synopsys/vcs/vcs_vQ-2020.03-SP1/linux64/lib/vcs_tls.o \
+-Wl,-whole-archive -lvcsucli -Wl,-no-whole-archive       ./../simv.daidir/vc_hdrs.o \
+_vcs_pli_stub_.o   /cadtools/synopsys/vcs/vcs_vQ-2020.03-SP1/linux64/lib/vcs_save_restore_new.o \
+/cadtools/springsoft/verdi_vR-2020.12-SP1/share/PLI/VCS/LINUX64/pli.a -ldl  -lc -lm \
+-lpthread -ldl 
+../simv up to date
+make[1]: warning:  Clock skew detected.  Your build may be incomplete.
+make[1]: Leaving directory `/project/crv/users/qxchen/GPGPU/testcase/test_gpgpu_axi_top/tc_bfs/csrc' \
+
+Command: /project/crv/users/qxchen/GPGPU/testcase/test_gpgpu_axi_top/tc_bfs/./simv +fsdb+functions -a simv.log +define+CASE_4W32T +systemverilog+.sv +bus_conflict_off
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version Q-2020.03-SP1_Full64; Runtime version Q-2020.03-SP1_Full64;  Jun 11 21:39 2024
+*Verdi* Loading libsscore_vcs202003.so
+FSDB Dumper for VCS, Release Verdi_R-2020.12-SP1, Linux x86_64/64bit, 03/02/2021
+(C) 1996 - 2021 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'test.fsdb'
+*Verdi* : Begin traversing the scope (test_gpu_axi_top), layer (0).
+*Verdi* : Enable +all, +mda and +functions dumping.
+*Verdi* WARNING: Var 'test_gpu_axi_top.u_ram.mem' will be ignored because its total element is larger than or equal to 2097152.
+*Verdi* : You may set environmental parameter "FSDB_MAX_VAR_ELEM" to enable the dumping.
+*Verdi* : End of traversing.
+============================================
+Begin test:
+metadata is                                                                                                 ./softdata/4x32/BFS_1_0.metadata:
+data is                                                                                                     ./softdata/4x32/BFS_1_0.data:
+
+
+*********
+metadata is                                                                                                 ./softdata/4x32/BFS_1_0.metadata:
+data is                                                                                                     ./softdata/4x32/BFS_1_0.data:
+Config finish!
+
+
+metadata is                                                                                                 ./softdata/4x32/BFS_1_0.metadata:
+data is                                                                                                     ./softdata/4x32/BFS_1_0.data:
+exe finish!
+============================================
+
+-------------case_bfs result------------
+--------------final result :------------
+          0x90002000 00000000
+          0x90002004 00000000
+          0x90002008 00000000
+          0x9000200c 00000000
+          0x90002010 00000000
+          0x90002014 00000000
+          0x90002018 00000000
+          0x9000201c 00000000
+          0x90002020 00000000
+          0x90002024 00000000
+          0x90002028 00000000
+          0x9000202c 00000000
+          0x90002030 00000000
+          0x90002034 00000000
+          0x90002038 00000000
+          0x9000203c 00000000
+          0x90002040 00000000
+          0x90002044 00000000
+          0x90002048 00000000
+          0x9000204c 00000000
+          0x90002050 00000000
+          0x90002054 00000000
+          0x90002058 00000000
+          0x9000205c 00000000
+          0x90002060 00000000
+          0x90002064 00000000
+          0x90002068 00000000
+          0x9000206c 00000000
+          0x90002070 00000000
+          0x90002074 00000000
+          0x90002078 00000000
+          0x9000207c 00000000
+          0x90003000 00000000
+          0x90003004 00000000
+          0x90003008 00000000
+          0x9000300c 00000000
+          0x90003010 00000000
+          0x90003014 00000000
+          0x90003018 01000000
+          0x9000301c 00000000
+          0x90003020 00000000
+          0x90003024 00000100
+          0x90003028 00000000
+          0x9000302c 00000000
+          0x90003030 00000000
+          0x90003034 00000000
+          0x90003038 00000000
+          0x9000303c 00000100
+          0x90003040 00010000
+          0x90003044 00000000
+          0x90003048 00000000
+          0x9000304c 00000000
+          0x90003050 00000000
+          0x90003054 00000000
+          0x90003058 00000000
+          0x9000305c 00000000
+          0x90003060 00000000
+          0x90003064 00000000
+          0x90003068 00000000
+          0x9000306c 00000000
+          0x90003070 00000000
+          0x90003074 00000000
+          0x90003078 00000000
+          0x9000307c 00000000
+          0x90004000 00000001
+          0x90004004 00000000
+          0x90004008 00000000
+          0x9000400c 00000000
+          0x90004010 00000000
+          0x90004014 00000000
+          0x90004018 00000000
+          0x9000401c 00000000
+          0x90004020 00000000
+          0x90004024 00000000
+          0x90004028 00000000
+          0x9000402c 00000000
+          0x90004030 00000000
+          0x90004034 00000000
+          0x90004038 00000000
+          0x9000403c 00000000
+          0x90004040 00000000
+          0x90004044 00000000
+          0x90004048 00000000
+          0x9000404c 00000000
+          0x90004050 00000000
+          0x90004054 00000000
+          0x90004058 00000000
+          0x9000405c 00000000
+          0x90004060 00000000
+          0x90004064 00000000
+          0x90004068 00000000
+          0x9000406c 00000000
+          0x90004070 00000000
+          0x90004074 00000000
+          0x90004078 00000000
+          0x9000407c 00000000
+          0x90005000 00000000
+          0x90005004 ffffffff
+          0x90005008 ffffffff
+          0x9000500c ffffffff
+          0x90005010 ffffffff
+          0x90005014 ffffffff
+          0x90005018 ffffffff
+          0x9000501c ffffffff
+          0x90005020 ffffffff
+          0x90005024 ffffffff
+          0x90005028 ffffffff
+          0x9000502c ffffffff
+          0x90005030 ffffffff
+          0x90005034 ffffffff
+          0x90005038 ffffffff
+          0x9000503c ffffffff
+          0x90005040 ffffffff
+          0x90005044 ffffffff
+          0x90005048 ffffffff
+          0x9000504c ffffffff
+          0x90005050 ffffffff
+          0x90005054 ffffffff
+          0x90005058 ffffffff
+          0x9000505c ffffffff
+          0x90005060 ffffffff
+          0x90005064 ffffffff
+          0x90005068 ffffffff
+          0x9000506c 00000001
+          0x90005070 ffffffff
+          0x90005074 ffffffff
+          0x90005078 ffffffff
+          0x9000507c ffffffff
+          0x90005080 ffffffff
+          0x90005084 ffffffff
+          0x90005088 ffffffff
+          0x9000508c ffffffff
+          0x90005090 ffffffff
+          0x90005094 00000001
+          0x90005098 ffffffff
+          0x9000509c ffffffff
+          0x900050a0 ffffffff
+          0x900050a4 ffffffff
+          0x900050a8 ffffffff
+          0x900050ac ffffffff
+          0x900050b0 ffffffff
+          0x900050b4 ffffffff
+          0x900050b8 ffffffff
+          0x900050bc ffffffff
+          0x900050c0 ffffffff
+          0x900050c4 ffffffff
+          0x900050c8 ffffffff
+          0x900050cc ffffffff
+          0x900050d0 ffffffff
+          0x900050d4 ffffffff
+          0x900050d8 ffffffff
+          0x900050dc ffffffff
+          0x900050e0 ffffffff
+          0x900050e4 ffffffff
+          0x900050e8 ffffffff
+          0x900050ec ffffffff
+          0x900050f0 ffffffff
+          0x900050f4 00000001
+          0x900050f8 ffffffff
+          0x900050fc ffffffff
+          0x90005100 ffffffff
+          0x90005104 ffffffff
+          0x90005108 00000001
+          0x9000510c ffffffff
+          0x90005110 ffffffff
+          0x90005114 ffffffff
+          0x90005118 ffffffff
+          0x9000511c ffffffff
+          0x90005120 ffffffff
+          0x90005124 ffffffff
+          0x90005128 ffffffff
+          0x9000512c ffffffff
+          0x90005130 ffffffff
+          0x90005134 ffffffff
+          0x90005138 ffffffff
+          0x9000513c ffffffff
+          0x90005140 ffffffff
+          0x90005144 ffffffff
+          0x90005148 ffffffff
+          0x9000514c ffffffff
+          0x90005150 ffffffff
+          0x90005154 ffffffff
+          0x90005158 ffffffff
+          0x9000515c ffffffff
+          0x90005160 ffffffff
+          0x90005164 ffffffff
+          0x90005168 ffffffff
+          0x9000516c ffffffff
+          0x90005170 ffffffff
+          0x90005174 ffffffff
+          0x90005178 ffffffff
+          0x9000517c ffffffff
+          0x90005180 ffffffff
+          0x90005184 ffffffff
+          0x90005188 ffffffff
+          0x9000518c ffffffff
+          0x90005190 ffffffff
+          0x90005194 ffffffff
+          0x90005198 ffffffff
+          0x9000519c ffffffff
+          0x900051a0 ffffffff
+          0x900051a4 ffffffff
+          0x900051a8 ffffffff
+          0x900051ac ffffffff
+          0x900051b0 ffffffff
+          0x900051b4 ffffffff
+          0x900051b8 ffffffff
+          0x900051bc ffffffff
+          0x900051c0 ffffffff
+          0x900051c4 ffffffff
+          0x900051c8 ffffffff
+          0x900051cc ffffffff
+          0x900051d0 ffffffff
+          0x900051d4 ffffffff
+          0x900051d8 ffffffff
+          0x900051dc ffffffff
+          0x900051e0 ffffffff
+          0x900051e4 ffffffff
+          0x900051e8 ffffffff
+          0x900051ec ffffffff
+          0x900051f0 ffffffff
+          0x900051f4 ffffffff
+          0x900051f8 ffffffff
+          0x900051fc ffffffff
+***********case_bfs_4w32t**********
+
+########    ###    #### ##       ######## ######## 
+##         ## ##    ##  ##       ##       ##     ##
+##        ##   ##   ##  ##       ##       ##     ##
+######   ##     ##  ##  ##       ######   ##     ##
+##       #########  ##  ##       ##       ##     ##
+##       ##     ##  ##  ##       ##       ##     ##
+##       ##     ## #### ######## ######## ######## 
+
+============================================
+Begin test:
+metadata is                                                                                                 ./softdata/4x32/BFS_2_0.metadata:
+data is                                                                                                     ./softdata/4x32/BFS_2_0.data:
+
+
+*********
+metadata is                                                                                                 ./softdata/4x32/BFS_2_0.metadata:
+data is                                                                                                     ./softdata/4x32/BFS_2_0.data:
+Config finish!
+
+
+metadata is                                                                                                 ./softdata/4x32/BFS_2_0.metadata:
+data is                                                                                                     ./softdata/4x32/BFS_2_0.data:
+exe finish!
+============================================
+
+-------------case_bfs result------------
+--------------final result :------------
+          0x90002000 00000000
+          0x90002004 00000000
+          0x90002008 00000000
+          0x9000200c 00000000
+          0x90002010 00000000
+          0x90002014 00000000
+          0x90002018 01000000
+          0x9000201c 00000000
+          0x90002020 00000000
+          0x90002024 00000100
+          0x90002028 00000000
+          0x9000202c 00000000
+          0x90002030 00000000
+          0x90002034 00000000
+          0x90002038 00000000
+          0x9000203c 00000100
+          0x90002040 00010000
+          0x90002044 00000000
+          0x90002048 00000000
+          0x9000204c 00000000
+          0x90002050 00000000
+          0x90002054 00000000
+          0x90002058 00000000
+          0x9000205c 00000000
+          0x90002060 00000000
+          0x90002064 00000000
+          0x90002068 00000000
+          0x9000206c 00000000
+          0x90002070 00000000
+          0x90002074 00000000
+          0x90002078 00000000
+          0x9000207c 00000000
+          0x90003000 00000000
+          0x90003004 00000000
+          0x90003008 00000000
+          0x9000300c 00000000
+          0x90003010 00000000
+          0x90003014 00000000
+          0x90003018 00000000
+          0x9000301c 00000000
+          0x90003020 00000000
+          0x90003024 00000000
+          0x90003028 00000000
+          0x9000302c 00000000
+          0x90003030 00000000
+          0x90003034 00000000
+          0x90003038 00000000
+          0x9000303c 00000000
+          0x90003040 00000000
+          0x90003044 00000000
+          0x90003048 00000000
+          0x9000304c 00000000
+          0x90003050 00000000
+          0x90003054 00000000
+          0x90003058 00000000
+          0x9000305c 00000000
+          0x90003060 00000000
+          0x90003064 00000000
+          0x90003068 00000000
+          0x9000306c 00000000
+          0x90003070 00000000
+          0x90003074 00000000
+          0x90003078 00000000
+          0x9000307c 00000000
+          0x90004000 00000001
+          0x90004004 00000000
+          0x90004008 00000000
+          0x9000400c 00000000
+          0x90004010 00000000
+          0x90004014 00000000
+          0x90004018 01000000
+          0x9000401c 00000000
+          0x90004020 00000000
+          0x90004024 00000100
+          0x90004028 00000000
+          0x9000402c 00000000
+          0x90004030 00000000
+          0x90004034 00000000
+          0x90004038 00000000
+          0x9000403c 00000100
+          0x90004040 00010000
+          0x90004044 00000000
+          0x90004048 00000000
+          0x9000404c 00000000
+          0x90004050 00000000
+          0x90004054 00000000
+          0x90004058 00000000
+          0x9000405c 00000000
+          0x90004060 00000000
+          0x90004064 00000000
+          0x90004068 00000000
+          0x9000406c 00000000
+          0x90004070 00000000
+          0x90004074 00000000
+          0x90004078 00000000
+          0x9000407c 00000000
+          0x90005000 00000000
+          0x90005004 ffffffff
+          0x90005008 ffffffff
+          0x9000500c ffffffff
+          0x90005010 ffffffff
+          0x90005014 ffffffff
+          0x90005018 ffffffff
+          0x9000501c ffffffff
+          0x90005020 ffffffff
+          0x90005024 ffffffff
+          0x90005028 ffffffff
+          0x9000502c ffffffff
+          0x90005030 ffffffff
+          0x90005034 ffffffff
+          0x90005038 ffffffff
+          0x9000503c ffffffff
+          0x90005040 ffffffff
+          0x90005044 ffffffff
+          0x90005048 ffffffff
+          0x9000504c ffffffff
+          0x90005050 ffffffff
+          0x90005054 ffffffff
+          0x90005058 ffffffff
+          0x9000505c ffffffff
+          0x90005060 ffffffff
+          0x90005064 ffffffff
+          0x90005068 ffffffff
+          0x9000506c 00000001
+          0x90005070 ffffffff
+          0x90005074 ffffffff
+          0x90005078 ffffffff
+          0x9000507c ffffffff
+          0x90005080 ffffffff
+          0x90005084 ffffffff
+          0x90005088 ffffffff
+          0x9000508c ffffffff
+          0x90005090 ffffffff
+          0x90005094 00000001
+          0x90005098 ffffffff
+          0x9000509c ffffffff
+          0x900050a0 ffffffff
+          0x900050a4 ffffffff
+          0x900050a8 ffffffff
+          0x900050ac ffffffff
+          0x900050b0 ffffffff
+          0x900050b4 ffffffff
+          0x900050b8 ffffffff
+          0x900050bc ffffffff
+          0x900050c0 ffffffff
+          0x900050c4 ffffffff
+          0x900050c8 ffffffff
+          0x900050cc ffffffff
+          0x900050d0 ffffffff
+          0x900050d4 ffffffff
+          0x900050d8 ffffffff
+          0x900050dc ffffffff
+          0x900050e0 ffffffff
+          0x900050e4 ffffffff
+          0x900050e8 ffffffff
+          0x900050ec ffffffff
+          0x900050f0 ffffffff
+          0x900050f4 00000001
+          0x900050f8 ffffffff
+          0x900050fc ffffffff
+          0x90005100 ffffffff
+          0x90005104 ffffffff
+          0x90005108 00000001
+          0x9000510c ffffffff
+          0x90005110 ffffffff
+          0x90005114 ffffffff
+          0x90005118 ffffffff
+          0x9000511c ffffffff
+          0x90005120 ffffffff
+          0x90005124 ffffffff
+          0x90005128 ffffffff
+          0x9000512c ffffffff
+          0x90005130 ffffffff
+          0x90005134 ffffffff
+          0x90005138 ffffffff
+          0x9000513c ffffffff
+          0x90005140 ffffffff
+          0x90005144 ffffffff
+          0x90005148 ffffffff
+          0x9000514c ffffffff
+          0x90005150 ffffffff
+          0x90005154 ffffffff
+          0x90005158 ffffffff
+          0x9000515c ffffffff
+          0x90005160 ffffffff
+          0x90005164 ffffffff
+          0x90005168 ffffffff
+          0x9000516c ffffffff
+          0x90005170 ffffffff
+          0x90005174 ffffffff
+          0x90005178 ffffffff
+          0x9000517c ffffffff
+          0x90005180 ffffffff
+          0x90005184 ffffffff
+          0x90005188 ffffffff
+          0x9000518c ffffffff
+          0x90005190 ffffffff
+          0x90005194 ffffffff
+          0x90005198 ffffffff
+          0x9000519c ffffffff
+          0x900051a0 ffffffff
+          0x900051a4 ffffffff
+          0x900051a8 ffffffff
+          0x900051ac ffffffff
+          0x900051b0 ffffffff
+          0x900051b4 ffffffff
+          0x900051b8 ffffffff
+          0x900051bc ffffffff
+          0x900051c0 ffffffff
+          0x900051c4 ffffffff
+          0x900051c8 ffffffff
+          0x900051cc ffffffff
+          0x900051d0 ffffffff
+          0x900051d4 ffffffff
+          0x900051d8 ffffffff
+          0x900051dc ffffffff
+          0x900051e0 ffffffff
+          0x900051e4 ffffffff
+          0x900051e8 ffffffff
+          0x900051ec ffffffff
+          0x900051f0 ffffffff
+          0x900051f4 ffffffff
+          0x900051f8 ffffffff
+          0x900051fc ffffffff
+***********case_bfs_4w32t**********
+
+########    ###    #### ##       ######## ######## 
+##         ## ##    ##  ##       ##       ##     ##
+##        ##   ##   ##  ##       ##       ##     ##
+######   ##     ##  ##  ##       ######   ##     ##
+##       #########  ##  ##       ##       ##     ##
+##       ##     ##  ##  ##       ##       ##     ##
+##       ##     ## #### ######## ######## ######## 
+
+============================================
+Begin test:
+metadata is                                                                                                 ./softdata/4x32/BFS_1_1.metadata:
+data is                                                                                                     ./softdata/4x32/BFS_1_1.data:
+
+
+*********
+metadata is                                                                                                 ./softdata/4x32/BFS_1_1.metadata:
+data is                                                                                                     ./softdata/4x32/BFS_1_1.data:
+Config finish!
+
+
+metadata is                                                                                                 ./softdata/4x32/BFS_1_1.metadata:
+data is                                                                                                     ./softdata/4x32/BFS_1_1.data:
+exe finish!
+============================================
+
+-------------case_bfs result------------
+--------------final result :------------
+          0x90002000 00000000
+          0x90002004 00000000
+          0x90002008 00000000
+          0x9000200c 00000000
+          0x90002010 00000000
+          0x90002014 00000000
+          0x90002018 00000000
+          0x9000201c 00000000
+          0x90002020 00000000
+          0x90002024 00000000
+          0x90002028 00000000
+          0x9000202c 00000000
+          0x90002030 00000000
+          0x90002034 00000000
+          0x90002038 00000000
+          0x9000203c 00000000
+          0x90002040 00000000
+          0x90002044 00000000
+          0x90002048 00000000
+          0x9000204c 00000000
+          0x90002050 00000000
+          0x90002054 00000000
+          0x90002058 00000000
+          0x9000205c 00000000
+          0x90002060 00000000
+          0x90002064 00000000
+          0x90002068 00000000
+          0x9000206c 00000000
+          0x90002070 00000000
+          0x90002074 00000000
+          0x90002078 00000000
+          0x9000207c 00000000
+          0x90003000 00000000
+          0x90003004 00000000
+          0x90003008 00000000
+          0x9000300c 00000000
+          0x90003010 00000000
+          0x90003014 00010100
+          0x90003018 00000100
+          0x9000301c 00000100
+          0x90003020 00000001
+          0x90003024 00000000
+          0x90003028 01000001
+          0x9000302c 00000100
+          0x90003030 00000000
+          0x90003034 00000000
+          0x90003038 01000100
+          0x9000303c 00000000
+          0x90003040 00000100
+          0x90003044 01000000
+          0x90003048 00000000
+          0x9000304c 00000001
+          0x90003050 00000000
+          0x90003054 00010100
+          0x90003058 00000000
+          0x9000305c 01000000
+          0x90003060 00000000
+          0x90003064 00000000
+          0x90003068 00000100
+          0x9000306c 00000000
+          0x90003070 00000000
+          0x90003074 00000000
+          0x90003078 00000001
+          0x9000307c 00000000
+          0x90004000 00000001
+          0x90004004 00000000
+          0x90004008 00000000
+          0x9000400c 00000000
+          0x90004010 00000000
+          0x90004014 00000000
+          0x90004018 01000000
+          0x9000401c 00000000
+          0x90004020 00000000
+          0x90004024 00000100
+          0x90004028 00000000
+          0x9000402c 00000000
+          0x90004030 00000000
+          0x90004034 00000000
+          0x90004038 00000000
+          0x9000403c 00000100
+          0x90004040 00010000
+          0x90004044 00000000
+          0x90004048 00000000
+          0x9000404c 00000000
+          0x90004050 00000000
+          0x90004054 00000000
+          0x90004058 00000000
+          0x9000405c 00000000
+          0x90004060 00000000
+          0x90004064 00000000
+          0x90004068 00000000
+          0x9000406c 00000000
+          0x90004070 00000000
+          0x90004074 00000000
+          0x90004078 00000000
+          0x9000407c 00000000
+          0x90005000 00000000
+          0x90005004 ffffffff
+          0x90005008 ffffffff
+          0x9000500c ffffffff
+          0x90005010 ffffffff
+          0x90005014 ffffffff
+          0x90005018 ffffffff
+          0x9000501c ffffffff
+          0x90005020 ffffffff
+          0x90005024 ffffffff
+          0x90005028 ffffffff
+          0x9000502c ffffffff
+          0x90005030 ffffffff
+          0x90005034 ffffffff
+          0x90005038 ffffffff
+          0x9000503c ffffffff
+          0x90005040 ffffffff
+          0x90005044 ffffffff
+          0x90005048 ffffffff
+          0x9000504c ffffffff
+          0x90005050 ffffffff
+          0x90005054 00000002
+          0x90005058 00000002
+          0x9000505c ffffffff
+          0x90005060 ffffffff
+          0x90005064 00000002
+          0x90005068 ffffffff
+          0x9000506c 00000001
+          0x90005070 ffffffff
+          0x90005074 00000002
+          0x90005078 ffffffff
+          0x9000507c ffffffff
+          0x90005080 00000002
+          0x90005084 ffffffff
+          0x90005088 ffffffff
+          0x9000508c ffffffff
+          0x90005090 ffffffff
+          0x90005094 00000001
+          0x90005098 ffffffff
+          0x9000509c ffffffff
+          0x900050a0 00000002
+          0x900050a4 ffffffff
+          0x900050a8 ffffffff
+          0x900050ac 00000002
+          0x900050b0 ffffffff
+          0x900050b4 00000002
+          0x900050b8 ffffffff
+          0x900050bc ffffffff
+          0x900050c0 ffffffff
+          0x900050c4 ffffffff
+          0x900050c8 ffffffff
+          0x900050cc ffffffff
+          0x900050d0 ffffffff
+          0x900050d4 ffffffff
+          0x900050d8 ffffffff
+          0x900050dc ffffffff
+          0x900050e0 ffffffff
+          0x900050e4 00000002
+          0x900050e8 ffffffff
+          0x900050ec 00000002
+          0x900050f0 ffffffff
+          0x900050f4 00000001
+          0x900050f8 ffffffff
+          0x900050fc ffffffff
+          0x90005100 ffffffff
+          0x90005104 00000002
+          0x90005108 00000001
+          0x9000510c ffffffff
+          0x90005110 ffffffff
+          0x90005114 ffffffff
+          0x90005118 ffffffff
+          0x9000511c 00000002
+          0x90005120 ffffffff
+          0x90005124 ffffffff
+          0x90005128 ffffffff
+          0x9000512c ffffffff
+          0x90005130 00000002
+          0x90005134 ffffffff
+          0x90005138 ffffffff
+          0x9000513c ffffffff
+          0x90005140 ffffffff
+          0x90005144 ffffffff
+          0x90005148 ffffffff
+          0x9000514c ffffffff
+          0x90005150 ffffffff
+          0x90005154 00000002
+          0x90005158 00000002
+          0x9000515c ffffffff
+          0x90005160 ffffffff
+          0x90005164 ffffffff
+          0x90005168 ffffffff
+          0x9000516c ffffffff
+          0x90005170 ffffffff
+          0x90005174 ffffffff
+          0x90005178 ffffffff
+          0x9000517c 00000002
+          0x90005180 ffffffff
+          0x90005184 ffffffff
+          0x90005188 ffffffff
+          0x9000518c ffffffff
+          0x90005190 ffffffff
+          0x90005194 ffffffff
+          0x90005198 ffffffff
+          0x9000519c ffffffff
+          0x900051a0 ffffffff
+          0x900051a4 00000002
+          0x900051a8 ffffffff
+          0x900051ac ffffffff
+          0x900051b0 ffffffff
+          0x900051b4 ffffffff
+          0x900051b8 ffffffff
+          0x900051bc ffffffff
+          0x900051c0 ffffffff
+          0x900051c4 ffffffff
+          0x900051c8 ffffffff
+          0x900051cc ffffffff
+          0x900051d0 ffffffff
+          0x900051d4 ffffffff
+          0x900051d8 ffffffff
+          0x900051dc ffffffff
+          0x900051e0 00000002
+          0x900051e4 ffffffff
+          0x900051e8 ffffffff
+          0x900051ec ffffffff
+          0x900051f0 ffffffff
+          0x900051f4 ffffffff
+          0x900051f8 ffffffff
+          0x900051fc ffffffff
+***********case_bfs_4w32t**********
+
+########    ###    #### ##       ######## ######## 
+##         ## ##    ##  ##       ##       ##     ##
+##        ##   ##   ##  ##       ##       ##     ##
+######   ##     ##  ##  ##       ######   ##     ##
+##       #########  ##  ##       ##       ##     ##
+##       ##     ##  ##  ##       ##       ##     ##
+##       ##     ## #### ######## ######## ######## 
+
+============================================
+Begin test:
+metadata is                                                                                                 ./softdata/4x32/BFS_2_1.metadata:
+data is                                                                                                     ./softdata/4x32/BFS_2_1.data:
+
+
+*********
+metadata is                                                                                                 ./softdata/4x32/BFS_2_1.metadata:
+data is                                                                                                     ./softdata/4x32/BFS_2_1.data:
+Config finish!
+
+
+metadata is                                                                                                 ./softdata/4x32/BFS_2_1.metadata:
+data is                                                                                                     ./softdata/4x32/BFS_2_1.data:
+exe finish!
+============================================
+
+-------------case_bfs result------------
+--------------final result :------------
+          0x90002000 00000000
+          0x90002004 00000000
+          0x90002008 00000000
+          0x9000200c 00000000
+          0x90002010 00000000
+          0x90002014 00010100
+          0x90002018 00000100
+          0x9000201c 00000100
+          0x90002020 00000001
+          0x90002024 00000000
+          0x90002028 01000001
+          0x9000202c 00000100
+          0x90002030 00000000
+          0x90002034 00000000
+          0x90002038 01000100
+          0x9000203c 00000000
+          0x90002040 00000100
+          0x90002044 01000000
+          0x90002048 00000000
+          0x9000204c 00000001
+          0x90002050 00000000
+          0x90002054 00010100
+          0x90002058 00000000
+          0x9000205c 01000000
+          0x90002060 00000000
+          0x90002064 00000000
+          0x90002068 00000100
+          0x9000206c 00000000
+          0x90002070 00000000
+          0x90002074 00000000
+          0x90002078 00000001
+          0x9000207c 00000000
+          0x90003000 00000000
+          0x90003004 00000000
+          0x90003008 00000000
+          0x9000300c 00000000
+          0x90003010 00000000
+          0x90003014 00000000
+          0x90003018 00000000
+          0x9000301c 00000000
+          0x90003020 00000000
+          0x90003024 00000000
+          0x90003028 00000000
+          0x9000302c 00000000
+          0x90003030 00000000
+          0x90003034 00000000
+          0x90003038 00000000
+          0x9000303c 00000000
+          0x90003040 00000000
+          0x90003044 00000000
+          0x90003048 00000000
+          0x9000304c 00000000
+          0x90003050 00000000
+          0x90003054 00000000
+          0x90003058 00000000
+          0x9000305c 00000000
+          0x90003060 00000000
+          0x90003064 00000000
+          0x90003068 00000000
+          0x9000306c 00000000
+          0x90003070 00000000
+          0x90003074 00000000
+          0x90003078 00000000
+          0x9000307c 00000000
+          0x90004000 00000001
+          0x90004004 00000000
+          0x90004008 00000000
+          0x9000400c 00000000
+          0x90004010 00000000
+          0x90004014 00010100
+          0x90004018 01000100
+          0x9000401c 00000100
+          0x90004020 00000001
+          0x90004024 00000100
+          0x90004028 01000001
+          0x9000402c 00000100
+          0x90004030 00000000
+          0x90004034 00000000
+          0x90004038 01000100
+          0x9000403c 00000100
+          0x90004040 00010100
+          0x90004044 01000000
+          0x90004048 00000000
+          0x9000404c 00000001
+          0x90004050 00000000
+          0x90004054 00010100
+          0x90004058 00000000
+          0x9000405c 01000000
+          0x90004060 00000000
+          0x90004064 00000000
+          0x90004068 00000100
+          0x9000406c 00000000
+          0x90004070 00000000
+          0x90004074 00000000
+          0x90004078 00000001
+          0x9000407c 00000000
+          0x90005000 00000000
+          0x90005004 ffffffff
+          0x90005008 ffffffff
+          0x9000500c ffffffff
+          0x90005010 ffffffff
+          0x90005014 ffffffff
+          0x90005018 ffffffff
+          0x9000501c ffffffff
+          0x90005020 ffffffff
+          0x90005024 ffffffff
+          0x90005028 ffffffff
+          0x9000502c ffffffff
+          0x90005030 ffffffff
+          0x90005034 ffffffff
+          0x90005038 ffffffff
+          0x9000503c ffffffff
+          0x90005040 ffffffff
+          0x90005044 ffffffff
+          0x90005048 ffffffff
+          0x9000504c ffffffff
+          0x90005050 ffffffff
+          0x90005054 00000002
+          0x90005058 00000002
+          0x9000505c ffffffff
+          0x90005060 ffffffff
+          0x90005064 00000002
+          0x90005068 ffffffff
+          0x9000506c 00000001
+          0x90005070 ffffffff
+          0x90005074 00000002
+          0x90005078 ffffffff
+          0x9000507c ffffffff
+          0x90005080 00000002
+          0x90005084 ffffffff
+          0x90005088 ffffffff
+          0x9000508c ffffffff
+          0x90005090 ffffffff
+          0x90005094 00000001
+          0x90005098 ffffffff
+          0x9000509c ffffffff
+          0x900050a0 00000002
+          0x900050a4 ffffffff
+          0x900050a8 ffffffff
+          0x900050ac 00000002
+          0x900050b0 ffffffff
+          0x900050b4 00000002
+          0x900050b8 ffffffff
+          0x900050bc ffffffff
+          0x900050c0 ffffffff
+          0x900050c4 ffffffff
+          0x900050c8 ffffffff
+          0x900050cc ffffffff
+          0x900050d0 ffffffff
+          0x900050d4 ffffffff
+          0x900050d8 ffffffff
+          0x900050dc ffffffff
+          0x900050e0 ffffffff
+          0x900050e4 00000002
+          0x900050e8 ffffffff
+          0x900050ec 00000002
+          0x900050f0 ffffffff
+          0x900050f4 00000001
+          0x900050f8 ffffffff
+          0x900050fc ffffffff
+          0x90005100 ffffffff
+          0x90005104 00000002
+          0x90005108 00000001
+          0x9000510c ffffffff
+          0x90005110 ffffffff
+          0x90005114 ffffffff
+          0x90005118 ffffffff
+          0x9000511c 00000002
+          0x90005120 ffffffff
+          0x90005124 ffffffff
+          0x90005128 ffffffff
+          0x9000512c ffffffff
+          0x90005130 00000002
+          0x90005134 ffffffff
+          0x90005138 ffffffff
+          0x9000513c ffffffff
+          0x90005140 ffffffff
+          0x90005144 ffffffff
+          0x90005148 ffffffff
+          0x9000514c ffffffff
+          0x90005150 ffffffff
+          0x90005154 00000002
+          0x90005158 00000002
+          0x9000515c ffffffff
+          0x90005160 ffffffff
+          0x90005164 ffffffff
+          0x90005168 ffffffff
+          0x9000516c ffffffff
+          0x90005170 ffffffff
+          0x90005174 ffffffff
+          0x90005178 ffffffff
+          0x9000517c 00000002
+          0x90005180 ffffffff
+          0x90005184 ffffffff
+          0x90005188 ffffffff
+          0x9000518c ffffffff
+          0x90005190 ffffffff
+          0x90005194 ffffffff
+          0x90005198 ffffffff
+          0x9000519c ffffffff
+          0x900051a0 ffffffff
+          0x900051a4 00000002
+          0x900051a8 ffffffff
+          0x900051ac ffffffff
+          0x900051b0 ffffffff
+          0x900051b4 ffffffff
+          0x900051b8 ffffffff
+          0x900051bc ffffffff
+          0x900051c0 ffffffff
+          0x900051c4 ffffffff
+          0x900051c8 ffffffff
+          0x900051cc ffffffff
+          0x900051d0 ffffffff
+          0x900051d4 ffffffff
+          0x900051d8 ffffffff
+          0x900051dc ffffffff
+          0x900051e0 00000002
+          0x900051e4 ffffffff
+          0x900051e8 ffffffff
+          0x900051ec ffffffff
+          0x900051f0 ffffffff
+          0x900051f4 ffffffff
+          0x900051f8 ffffffff
+          0x900051fc ffffffff
+***********case_bfs_4w32t**********
+
+########    ###    #### ##       ######## ######## 
+##         ## ##    ##  ##       ##       ##     ##
+##        ##   ##   ##  ##       ##       ##     ##
+######   ##     ##  ##  ##       ######   ##     ##
+##       #########  ##  ##       ##       ##     ##
+##       ##     ##  ##  ##       ##       ##     ##
+##       ##     ## #### ######## ######## ######## 
+
+============================================
+Begin test:
+metadata is                                                                                                 ./softdata/4x32/BFS_1_2.metadata:
+data is                                                                                                     ./softdata/4x32/BFS_1_2.data:
+
+
+*********
+metadata is                                                                                                 ./softdata/4x32/BFS_1_2.metadata:
+data is                                                                                                     ./softdata/4x32/BFS_1_2.data:
+Config finish!
+
+
+metadata is                                                                                                 ./softdata/4x32/BFS_1_2.metadata:
+data is                                                                                                     ./softdata/4x32/BFS_1_2.data:
+exe finish!
+============================================
+
+-------------case_bfs result------------
+--------------final result :------------
+          0x90002000 00000000
+          0x90002004 00000000
+          0x90002008 00000000
+          0x9000200c 00000000
+          0x90002010 00000000
+          0x90002014 00000000
+          0x90002018 00000000
+          0x9000201c 00000000
+          0x90002020 00000000
+          0x90002024 00000000
+          0x90002028 00000000
+          0x9000202c 00000000
+          0x90002030 00000000
+          0x90002034 00000000
+          0x90002038 00000000
+          0x9000203c 00000000
+          0x90002040 00000000
+          0x90002044 00000000
+          0x90002048 00000000
+          0x9000204c 00000000
+          0x90002050 00000000
+          0x90002054 00000000
+          0x90002058 00000000
+          0x9000205c 00000000
+          0x90002060 00000000
+          0x90002064 00000000
+          0x90002068 00000000
+          0x9000206c 00000000
+          0x90002070 00000000
+          0x90002074 00000000
+          0x90002078 00000000
+          0x9000207c 00000000
+          0x90003000 01000000
+          0x90003004 00010001
+          0x90003008 01000101
+          0x9000300c 01000101
+          0x90003010 01000001
+          0x90003014 00000000
+          0x90003018 00010000
+          0x9000301c 00000001
+          0x90003020 00010000
+          0x90003024 00010001
+          0x90003028 00010100
+          0x9000302c 01000001
+          0x90003030 00010101
+          0x90003034 00000101
+          0x90003038 00000001
+          0x9000303c 01000001
+          0x90003040 00000001
+          0x90003044 00000101
+          0x90003048 01010101
+          0x9000304c 00010100
+          0x90003050 01000101
+          0x90003054 01000000
+          0x90003058 00010101
+          0x9000305c 00010101
+          0x90003060 00000101
+          0x90003064 00000001
+          0x90003068 01010000
+          0x9000306c 01000001
+          0x90003070 01000100
+          0x90003074 01000001
+          0x90003078 01000000
+          0x9000307c 01010101
+          0x90004000 00000001
+          0x90004004 00000000
+          0x90004008 00000000
+          0x9000400c 00000000
+          0x90004010 00000000
+          0x90004014 00010100
+          0x90004018 01000100
+          0x9000401c 00000100
+          0x90004020 00000001
+          0x90004024 00000100
+          0x90004028 01000001
+          0x9000402c 00000100
+          0x90004030 00000000
+          0x90004034 00000000
+          0x90004038 01000100
+          0x9000403c 00000100
+          0x90004040 00010100
+          0x90004044 01000000
+          0x90004048 00000000
+          0x9000404c 00000001
+          0x90004050 00000000
+          0x90004054 00010100
+          0x90004058 00000000
+          0x9000405c 01000000
+          0x90004060 00000000
+          0x90004064 00000000
+          0x90004068 00000100
+          0x9000406c 00000000
+          0x90004070 00000000
+          0x90004074 00000000
+          0x90004078 00000001
+          0x9000407c 00000000
+          0x90005000 00000000
+          0x90005004 ffffffff
+          0x90005008 ffffffff
+          0x9000500c 00000003
+          0x90005010 00000003
+          0x90005014 ffffffff
+          0x90005018 00000003
+          0x9000501c ffffffff
+          0x90005020 00000003
+          0x90005024 00000003
+          0x90005028 ffffffff
+          0x9000502c 00000003
+          0x90005030 00000003
+          0x90005034 00000003
+          0x90005038 ffffffff
+          0x9000503c 00000003
+          0x90005040 00000003
+          0x90005044 ffffffff
+          0x90005048 ffffffff
+          0x9000504c 00000003
+          0x90005050 ffffffff
+          0x90005054 00000002
+          0x90005058 00000002
+          0x9000505c ffffffff
+          0x90005060 ffffffff
+          0x90005064 00000002
+          0x90005068 00000003
+          0x9000506c 00000001
+          0x90005070 00000003
+          0x90005074 00000002
+          0x90005078 ffffffff
+          0x9000507c ffffffff
+          0x90005080 00000002
+          0x90005084 ffffffff
+          0x90005088 00000003
+          0x9000508c ffffffff
+          0x90005090 00000003
+          0x90005094 00000001
+          0x90005098 00000003
+          0x9000509c ffffffff
+          0x900050a0 00000002
+          0x900050a4 00000003
+          0x900050a8 00000003
+          0x900050ac 00000002
+          0x900050b0 00000003
+          0x900050b4 00000002
+          0x900050b8 ffffffff
+          0x900050bc 00000003
+          0x900050c0 00000003
+          0x900050c4 00000003
+          0x900050c8 00000003
+          0x900050cc ffffffff
+          0x900050d0 00000003
+          0x900050d4 00000003
+          0x900050d8 ffffffff
+          0x900050dc ffffffff
+          0x900050e0 00000003
+          0x900050e4 00000002
+          0x900050e8 ffffffff
+          0x900050ec 00000002
+          0x900050f0 00000003
+          0x900050f4 00000001
+          0x900050f8 ffffffff
+          0x900050fc 00000003
+          0x90005100 00000003
+          0x90005104 00000002
+          0x90005108 00000001
+          0x9000510c ffffffff
+          0x90005110 00000003
+          0x90005114 00000003
+          0x90005118 ffffffff
+          0x9000511c 00000002
+          0x90005120 00000003
+          0x90005124 00000003
+          0x90005128 00000003
+          0x9000512c 00000003
+          0x90005130 00000002
+          0x90005134 00000003
+          0x90005138 00000003
+          0x9000513c ffffffff
+          0x90005140 00000003
+          0x90005144 00000003
+          0x90005148 ffffffff
+          0x9000514c 00000003
+          0x90005150 ffffffff
+          0x90005154 00000002
+          0x90005158 00000002
+          0x9000515c 00000003
+          0x90005160 00000003
+          0x90005164 00000003
+          0x90005168 00000003
+          0x9000516c ffffffff
+          0x90005170 00000003
+          0x90005174 00000003
+          0x90005178 00000003
+          0x9000517c 00000002
+          0x90005180 00000003
+          0x90005184 00000003
+          0x90005188 ffffffff
+          0x9000518c ffffffff
+          0x90005190 00000003
+          0x90005194 ffffffff
+          0x90005198 ffffffff
+          0x9000519c ffffffff
+          0x900051a0 ffffffff
+          0x900051a4 00000002
+          0x900051a8 00000003
+          0x900051ac 00000003
+          0x900051b0 00000003
+          0x900051b4 ffffffff
+          0x900051b8 ffffffff
+          0x900051bc 00000003
+          0x900051c0 ffffffff
+          0x900051c4 00000003
+          0x900051c8 ffffffff
+          0x900051cc 00000003
+          0x900051d0 00000003
+          0x900051d4 ffffffff
+          0x900051d8 ffffffff
+          0x900051dc 00000003
+          0x900051e0 00000002
+          0x900051e4 ffffffff
+          0x900051e8 ffffffff
+          0x900051ec 00000003
+          0x900051f0 00000003
+          0x900051f4 00000003
+          0x900051f8 00000003
+          0x900051fc 00000003
+***********case_bfs_4w32t**********
+
+########    ###    #### ##       ######## ######## 
+##         ## ##    ##  ##       ##       ##     ##
+##        ##   ##   ##  ##       ##       ##     ##
+######   ##     ##  ##  ##       ######   ##     ##
+##       #########  ##  ##       ##       ##     ##
+##       ##     ##  ##  ##       ##       ##     ##
+##       ##     ## #### ######## ######## ######## 
+
+============================================
+Begin test:
+metadata is                                                                                                 ./softdata/4x32/BFS_2_2.metadata:
+data is                                                                                                     ./softdata/4x32/BFS_2_2.data:
+
+
+*********
+metadata is                                                                                                 ./softdata/4x32/BFS_2_2.metadata:
+data is                                                                                                     ./softdata/4x32/BFS_2_2.data:
+Config finish!
+
+
+metadata is                                                                                                 ./softdata/4x32/BFS_2_2.metadata:
+data is                                                                                                     ./softdata/4x32/BFS_2_2.data:
+exe finish!
+============================================
+
+-------------case_bfs result------------
+--------------final result :------------
+          0x90002000 01000000
+          0x90002004 00010001
+          0x90002008 01000101
+          0x9000200c 01000101
+          0x90002010 01000001
+          0x90002014 00000000
+          0x90002018 00010000
+          0x9000201c 00000001
+          0x90002020 00010000
+          0x90002024 00010001
+          0x90002028 00010100
+          0x9000202c 01000001
+          0x90002030 00010101
+          0x90002034 00000101
+          0x90002038 00000001
+          0x9000203c 01000001
+          0x90002040 00000001
+          0x90002044 00000101
+          0x90002048 01010101
+          0x9000204c 00010100
+          0x90002050 01000101
+          0x90002054 01000000
+          0x90002058 00010101
+          0x9000205c 00010101
+          0x90002060 00000101
+          0x90002064 00000001
+          0x90002068 01010000
+          0x9000206c 01000001
+          0x90002070 01000100
+          0x90002074 01000001
+          0x90002078 01000000
+          0x9000207c 01010101
+          0x90003000 00000000
+          0x90003004 00000000
+          0x90003008 00000000
+          0x9000300c 00000000
+          0x90003010 00000000
+          0x90003014 00000000
+          0x90003018 00000000
+          0x9000301c 00000000
+          0x90003020 00000000
+          0x90003024 00000000
+          0x90003028 00000000
+          0x9000302c 00000000
+          0x90003030 00000000
+          0x90003034 00000000
+          0x90003038 00000000
+          0x9000303c 00000000
+          0x90003040 00000000
+          0x90003044 00000000
+          0x90003048 00000000
+          0x9000304c 00000000
+          0x90003050 00000000
+          0x90003054 00000000
+          0x90003058 00000000
+          0x9000305c 00000000
+          0x90003060 00000000
+          0x90003064 00000000
+          0x90003068 00000000
+          0x9000306c 00000000
+          0x90003070 00000000
+          0x90003074 00000000
+          0x90003078 00000000
+          0x9000307c 00000000
+          0x90004000 01000001
+          0x90004004 00010001
+          0x90004008 01000101
+          0x9000400c 01000101
+          0x90004010 01000001
+          0x90004014 00010100
+          0x90004018 01010100
+          0x9000401c 00000101
+          0x90004020 00010001
+          0x90004024 00010101
+          0x90004028 01010101
+          0x9000402c 01000101
+          0x90004030 00010101
+          0x90004034 00000101
+          0x90004038 01000101
+          0x9000403c 01000101
+          0x90004040 00010101
+          0x90004044 01000101
+          0x90004048 01010101
+          0x9000404c 00010101
+          0x90004050 01000101
+          0x90004054 01010100
+          0x90004058 00010101
+          0x9000405c 01010101
+          0x90004060 00000101
+          0x90004064 00000001
+          0x90004068 01010100
+          0x9000406c 01000001
+          0x90004070 01000100
+          0x90004074 01000001
+          0x90004078 01000001
+          0x9000407c 01010101
+          0x90005000 00000000
+          0x90005004 ffffffff
+          0x90005008 ffffffff
+          0x9000500c 00000003
+          0x90005010 00000003
+          0x90005014 ffffffff
+          0x90005018 00000003
+          0x9000501c ffffffff
+          0x90005020 00000003
+          0x90005024 00000003
+          0x90005028 ffffffff
+          0x9000502c 00000003
+          0x90005030 00000003
+          0x90005034 00000003
+          0x90005038 ffffffff
+          0x9000503c 00000003
+          0x90005040 00000003
+          0x90005044 ffffffff
+          0x90005048 ffffffff
+          0x9000504c 00000003
+          0x90005050 ffffffff
+          0x90005054 00000002
+          0x90005058 00000002
+          0x9000505c ffffffff
+          0x90005060 ffffffff
+          0x90005064 00000002
+          0x90005068 00000003
+          0x9000506c 00000001
+          0x90005070 00000003
+          0x90005074 00000002
+          0x90005078 ffffffff
+          0x9000507c ffffffff
+          0x90005080 00000002
+          0x90005084 ffffffff
+          0x90005088 00000003
+          0x9000508c ffffffff
+          0x90005090 00000003
+          0x90005094 00000001
+          0x90005098 00000003
+          0x9000509c ffffffff
+          0x900050a0 00000002
+          0x900050a4 00000003
+          0x900050a8 00000003
+          0x900050ac 00000002
+          0x900050b0 00000003
+          0x900050b4 00000002
+          0x900050b8 ffffffff
+          0x900050bc 00000003
+          0x900050c0 00000003
+          0x900050c4 00000003
+          0x900050c8 00000003
+          0x900050cc ffffffff
+          0x900050d0 00000003
+          0x900050d4 00000003
+          0x900050d8 ffffffff
+          0x900050dc ffffffff
+          0x900050e0 00000003
+          0x900050e4 00000002
+          0x900050e8 ffffffff
+          0x900050ec 00000002
+          0x900050f0 00000003
+          0x900050f4 00000001
+          0x900050f8 ffffffff
+          0x900050fc 00000003
+          0x90005100 00000003
+          0x90005104 00000002
+          0x90005108 00000001
+          0x9000510c ffffffff
+          0x90005110 00000003
+          0x90005114 00000003
+          0x90005118 ffffffff
+          0x9000511c 00000002
+          0x90005120 00000003
+          0x90005124 00000003
+          0x90005128 00000003
+          0x9000512c 00000003
+          0x90005130 00000002
+          0x90005134 00000003
+          0x90005138 00000003
+          0x9000513c ffffffff
+          0x90005140 00000003
+          0x90005144 00000003
+          0x90005148 ffffffff
+          0x9000514c 00000003
+          0x90005150 ffffffff
+          0x90005154 00000002
+          0x90005158 00000002
+          0x9000515c 00000003
+          0x90005160 00000003
+          0x90005164 00000003
+          0x90005168 00000003
+          0x9000516c ffffffff
+          0x90005170 00000003
+          0x90005174 00000003
+          0x90005178 00000003
+          0x9000517c 00000002
+          0x90005180 00000003
+          0x90005184 00000003
+          0x90005188 ffffffff
+          0x9000518c ffffffff
+          0x90005190 00000003
+          0x90005194 ffffffff
+          0x90005198 ffffffff
+          0x9000519c ffffffff
+          0x900051a0 ffffffff
+          0x900051a4 00000002
+          0x900051a8 00000003
+          0x900051ac 00000003
+          0x900051b0 00000003
+          0x900051b4 ffffffff
+          0x900051b8 ffffffff
+          0x900051bc 00000003
+          0x900051c0 ffffffff
+          0x900051c4 00000003
+          0x900051c8 ffffffff
+          0x900051cc 00000003
+          0x900051d0 00000003
+          0x900051d4 ffffffff
+          0x900051d8 ffffffff
+          0x900051dc 00000003
+          0x900051e0 00000002
+          0x900051e4 ffffffff
+          0x900051e8 ffffffff
+          0x900051ec 00000003
+          0x900051f0 00000003
+          0x900051f4 00000003
+          0x900051f8 00000003
+          0x900051fc 00000003
+***********case_bfs_4w32t**********
+
+########    ###    #### ##       ######## ######## 
+##         ## ##    ##  ##       ##       ##     ##
+##        ##   ##   ##  ##       ##       ##     ##
+######   ##     ##  ##  ##       ######   ##     ##
+##       #########  ##  ##       ##       ##     ##
+##       ##     ##  ##  ##       ##       ##     ##
+##       ##     ## #### ######## ######## ######## 
+
+============================================
+Begin test:
+metadata is                                                                                                 ./softdata/4x32/BFS_1_3.metadata:
+data is                                                                                                     ./softdata/4x32/BFS_1_3.data:
+
+
+*********
+metadata is                                                                                                 ./softdata/4x32/BFS_1_3.metadata:
+data is                                                                                                     ./softdata/4x32/BFS_1_3.data:
+Config finish!
+
+
+metadata is                                                                                                 ./softdata/4x32/BFS_1_3.metadata:
+data is                                                                                                     ./softdata/4x32/BFS_1_3.data:
+exe finish!
+============================================
+
+-------------case_bfs result------------
+--------------final result :------------
+          0x90002000 00000000
+          0x90002004 00000000
+          0x90002008 00000000
+          0x9000200c 00000000
+          0x90002010 00000000
+          0x90002014 00000000
+          0x90002018 00000000
+          0x9000201c 00000000
+          0x90002020 00000000
+          0x90002024 00000000
+          0x90002028 00000000
+          0x9000202c 00000000
+          0x90002030 00000000
+          0x90002034 00000000
+          0x90002038 00000000
+          0x9000203c 00000000
+          0x90002040 00000000
+          0x90002044 00000000
+          0x90002048 00000000
+          0x9000204c 00000000
+          0x90002050 00000000
+          0x90002054 00000000
+          0x90002058 00000000
+          0x9000205c 00000000
+          0x90002060 00000000
+          0x90002064 00000000
+          0x90002068 00000000
+          0x9000206c 00000000
+          0x90002070 00000000
+          0x90002074 00000000
+          0x90002078 00000000
+          0x9000207c 00000000
+          0x90003000 00010100
+          0x90003004 01000100
+          0x90003008 00010000
+          0x9000300c 00010000
+          0x90003010 00010100
+          0x90003014 01000001
+          0x90003018 00000001
+          0x9000301c 01010000
+          0x90003020 01000100
+          0x90003024 01000000
+          0x90003028 00000000
+          0x9000302c 00010000
+          0x90003030 01000000
+          0x90003034 01010000
+          0x90003038 00010000
+          0x9000303c 00010000
+          0x90003040 01000000
+          0x90003044 00010000
+          0x90003048 00000000
+          0x9000304c 01000000
+          0x90003050 00010000
+          0x90003054 00000001
+          0x90003058 01000000
+          0x9000305c 00000000
+          0x90003060 01010000
+          0x90003064 01010100
+          0x90003068 00000001
+          0x9000306c 00010100
+          0x90003070 00010001
+          0x90003074 00010100
+          0x90003078 00010100
+          0x9000307c 00000000
+          0x90004000 01000001
+          0x90004004 00010001
+          0x90004008 01000101
+          0x9000400c 01000101
+          0x90004010 01000001
+          0x90004014 00010100
+          0x90004018 01010100
+          0x9000401c 00000101
+          0x90004020 00010001
+          0x90004024 00010101
+          0x90004028 01010101
+          0x9000402c 01000101
+          0x90004030 00010101
+          0x90004034 00000101
+          0x90004038 01000101
+          0x9000403c 01000101
+          0x90004040 00010101
+          0x90004044 01000101
+          0x90004048 01010101
+          0x9000404c 00010101
+          0x90004050 01000101
+          0x90004054 01010100
+          0x90004058 00010101
+          0x9000405c 01010101
+          0x90004060 00000101
+          0x90004064 00000001
+          0x90004068 01010100
+          0x9000406c 01000001
+          0x90004070 01000100
+          0x90004074 01000001
+          0x90004078 01000001
+          0x9000407c 01010101
+          0x90005000 00000000
+          0x90005004 00000004
+          0x90005008 00000004
+          0x9000500c 00000003
+          0x90005010 00000003
+          0x90005014 00000004
+          0x90005018 00000003
+          0x9000501c 00000004
+          0x90005020 00000003
+          0x90005024 00000003
+          0x90005028 00000004
+          0x9000502c 00000003
+          0x90005030 00000003
+          0x90005034 00000003
+          0x90005038 00000004
+          0x9000503c 00000003
+          0x90005040 00000003
+          0x90005044 00000004
+          0x90005048 00000004
+          0x9000504c 00000003
+          0x90005050 00000004
+          0x90005054 00000002
+          0x90005058 00000002
+          0x9000505c 00000004
+          0x90005060 00000004
+          0x90005064 00000002
+          0x90005068 00000003
+          0x9000506c 00000001
+          0x90005070 00000003
+          0x90005074 00000002
+          0x90005078 00000004
+          0x9000507c 00000004
+          0x90005080 00000002
+          0x90005084 00000004
+          0x90005088 00000003
+          0x9000508c 00000004
+          0x90005090 00000003
+          0x90005094 00000001
+          0x90005098 00000003
+          0x9000509c 00000004
+          0x900050a0 00000002
+          0x900050a4 00000003
+          0x900050a8 00000003
+          0x900050ac 00000002
+          0x900050b0 00000003
+          0x900050b4 00000002
+          0x900050b8 00000004
+          0x900050bc 00000003
+          0x900050c0 00000003
+          0x900050c4 00000003
+          0x900050c8 00000003
+          0x900050cc 00000004
+          0x900050d0 00000003
+          0x900050d4 00000003
+          0x900050d8 00000004
+          0x900050dc 00000004
+          0x900050e0 00000003
+          0x900050e4 00000002
+          0x900050e8 00000004
+          0x900050ec 00000002
+          0x900050f0 00000003
+          0x900050f4 00000001
+          0x900050f8 00000004
+          0x900050fc 00000003
+          0x90005100 00000003
+          0x90005104 00000002
+          0x90005108 00000001
+          0x9000510c 00000004
+          0x90005110 00000003
+          0x90005114 00000003
+          0x90005118 00000004
+          0x9000511c 00000002
+          0x90005120 00000003
+          0x90005124 00000003
+          0x90005128 00000003
+          0x9000512c 00000003
+          0x90005130 00000002
+          0x90005134 00000003
+          0x90005138 00000003
+          0x9000513c 00000004
+          0x90005140 00000003
+          0x90005144 00000003
+          0x90005148 00000004
+          0x9000514c 00000003
+          0x90005150 00000004
+          0x90005154 00000002
+          0x90005158 00000002
+          0x9000515c 00000003
+          0x90005160 00000003
+          0x90005164 00000003
+          0x90005168 00000003
+          0x9000516c 00000004
+          0x90005170 00000003
+          0x90005174 00000003
+          0x90005178 00000003
+          0x9000517c 00000002
+          0x90005180 00000003
+          0x90005184 00000003
+          0x90005188 00000004
+          0x9000518c 00000004
+          0x90005190 00000003
+          0x90005194 00000004
+          0x90005198 00000004
+          0x9000519c 00000004
+          0x900051a0 00000004
+          0x900051a4 00000002
+          0x900051a8 00000003
+          0x900051ac 00000003
+          0x900051b0 00000003
+          0x900051b4 00000004
+          0x900051b8 00000004
+          0x900051bc 00000003
+          0x900051c0 00000004
+          0x900051c4 00000003
+          0x900051c8 00000004
+          0x900051cc 00000003
+          0x900051d0 00000003
+          0x900051d4 00000004
+          0x900051d8 00000004
+          0x900051dc 00000003
+          0x900051e0 00000002
+          0x900051e4 00000004
+          0x900051e8 00000004
+          0x900051ec 00000003
+          0x900051f0 00000003
+          0x900051f4 00000003
+          0x900051f8 00000003
+          0x900051fc 00000003
+***********case_bfs_4w32t**********
+
+########     ###     ######   ######  ######## ######## 
+##     ##   ## ##   ##    ## ##    ## ##       ##     ##
+##     ##  ##   ##  ##       ##       ##       ##     ##
+########  ##     ##  ######   ######  ######   ##     ##
+##        #########       ##       ## ##       ##     ##
+##        ##     ## ##    ## ##    ## ##       ##     ##
+##        ##     ##  ######   ######  ######## ######## 
+
+============================================
+Begin test:
+metadata is                                                                                                 ./softdata/4x32/BFS_2_3.metadata:
+data is                                                                                                     ./softdata/4x32/BFS_2_3.data:
+
+
+*********
+metadata is                                                                                                 ./softdata/4x32/BFS_2_3.metadata:
+data is                                                                                                     ./softdata/4x32/BFS_2_3.data:
+Config finish!
+
+
+metadata is                                                                                                 ./softdata/4x32/BFS_2_3.metadata:
+data is                                                                                                     ./softdata/4x32/BFS_2_3.data:
+exe finish!
+============================================
+
+-------------case_bfs result------------
+--------------final result :------------
+          0x90002000 00010100
+          0x90002004 01000100
+          0x90002008 00010000
+          0x9000200c 00010000
+          0x90002010 00010100
+          0x90002014 01000001
+          0x90002018 00000001
+          0x9000201c 01010000
+          0x90002020 01000100
+          0x90002024 01000000
+          0x90002028 00000000
+          0x9000202c 00010000
+          0x90002030 01000000
+          0x90002034 01010000
+          0x90002038 00010000
+          0x9000203c 00010000
+          0x90002040 01000000
+          0x90002044 00010000
+          0x90002048 00000000
+          0x9000204c 01000000
+          0x90002050 00010000
+          0x90002054 00000001
+          0x90002058 01000000
+          0x9000205c 00000000
+          0x90002060 01010000
+          0x90002064 01010100
+          0x90002068 00000001
+          0x9000206c 00010100
+          0x90002070 00010001
+          0x90002074 00010100
+          0x90002078 00010100
+          0x9000207c 00000000
+          0x90003000 00000000
+          0x90003004 00000000
+          0x90003008 00000000
+          0x9000300c 00000000
+          0x90003010 00000000
+          0x90003014 00000000
+          0x90003018 00000000
+          0x9000301c 00000000
+          0x90003020 00000000
+          0x90003024 00000000
+          0x90003028 00000000
+          0x9000302c 00000000
+          0x90003030 00000000
+          0x90003034 00000000
+          0x90003038 00000000
+          0x9000303c 00000000
+          0x90003040 00000000
+          0x90003044 00000000
+          0x90003048 00000000
+          0x9000304c 00000000
+          0x90003050 00000000
+          0x90003054 00000000
+          0x90003058 00000000
+          0x9000305c 00000000
+          0x90003060 00000000
+          0x90003064 00000000
+          0x90003068 00000000
+          0x9000306c 00000000
+          0x90003070 00000000
+          0x90003074 00000000
+          0x90003078 00000000
+          0x9000307c 00000000
+          0x90004000 01010101
+          0x90004004 01010101
+          0x90004008 01010101
+          0x9000400c 01010101
+          0x90004010 01010101
+          0x90004014 01010101
+          0x90004018 01010101
+          0x9000401c 01010101
+          0x90004020 01010101
+          0x90004024 01010101
+          0x90004028 01010101
+          0x9000402c 01010101
+          0x90004030 01010101
+          0x90004034 01010101
+          0x90004038 01010101
+          0x9000403c 01010101
+          0x90004040 01010101
+          0x90004044 01010101
+          0x90004048 01010101
+          0x9000404c 01010101
+          0x90004050 01010101
+          0x90004054 01010101
+          0x90004058 01010101
+          0x9000405c 01010101
+          0x90004060 01010101
+          0x90004064 01010101
+          0x90004068 01010101
+          0x9000406c 01010101
+          0x90004070 01010101
+          0x90004074 01010101
+          0x90004078 01010101
+          0x9000407c 01010101
+          0x90005000 00000000
+          0x90005004 00000004
+          0x90005008 00000004
+          0x9000500c 00000003
+          0x90005010 00000003
+          0x90005014 00000004
+          0x90005018 00000003
+          0x9000501c 00000004
+          0x90005020 00000003
+          0x90005024 00000003
+          0x90005028 00000004
+          0x9000502c 00000003
+          0x90005030 00000003
+          0x90005034 00000003
+          0x90005038 00000004
+          0x9000503c 00000003
+          0x90005040 00000003
+          0x90005044 00000004
+          0x90005048 00000004
+          0x9000504c 00000003
+          0x90005050 00000004
+          0x90005054 00000002
+          0x90005058 00000002
+          0x9000505c 00000004
+          0x90005060 00000004
+          0x90005064 00000002
+          0x90005068 00000003
+          0x9000506c 00000001
+          0x90005070 00000003
+          0x90005074 00000002
+          0x90005078 00000004
+          0x9000507c 00000004
+          0x90005080 00000002
+          0x90005084 00000004
+          0x90005088 00000003
+          0x9000508c 00000004
+          0x90005090 00000003
+          0x90005094 00000001
+          0x90005098 00000003
+          0x9000509c 00000004
+          0x900050a0 00000002
+          0x900050a4 00000003
+          0x900050a8 00000003
+          0x900050ac 00000002
+          0x900050b0 00000003
+          0x900050b4 00000002
+          0x900050b8 00000004
+          0x900050bc 00000003
+          0x900050c0 00000003
+          0x900050c4 00000003
+          0x900050c8 00000003
+          0x900050cc 00000004
+          0x900050d0 00000003
+          0x900050d4 00000003
+          0x900050d8 00000004
+          0x900050dc 00000004
+          0x900050e0 00000003
+          0x900050e4 00000002
+          0x900050e8 00000004
+          0x900050ec 00000002
+          0x900050f0 00000003
+          0x900050f4 00000001
+          0x900050f8 00000004
+          0x900050fc 00000003
+          0x90005100 00000003
+          0x90005104 00000002
+          0x90005108 00000001
+          0x9000510c 00000004
+          0x90005110 00000003
+          0x90005114 00000003
+          0x90005118 00000004
+          0x9000511c 00000002
+          0x90005120 00000003
+          0x90005124 00000003
+          0x90005128 00000003
+          0x9000512c 00000003
+          0x90005130 00000002
+          0x90005134 00000003
+          0x90005138 00000003
+          0x9000513c 00000004
+          0x90005140 00000003
+          0x90005144 00000003
+          0x90005148 00000004
+          0x9000514c 00000003
+          0x90005150 00000004
+          0x90005154 00000002
+          0x90005158 00000002
+          0x9000515c 00000003
+          0x90005160 00000003
+          0x90005164 00000003
+          0x90005168 00000003
+          0x9000516c 00000004
+          0x90005170 00000003
+          0x90005174 00000003
+          0x90005178 00000003
+          0x9000517c 00000002
+          0x90005180 00000003
+          0x90005184 00000003
+          0x90005188 00000004
+          0x9000518c 00000004
+          0x90005190 00000003
+          0x90005194 00000004
+          0x90005198 00000004
+          0x9000519c 00000004
+          0x900051a0 00000004
+          0x900051a4 00000002
+          0x900051a8 00000003
+          0x900051ac 00000003
+          0x900051b0 00000003
+          0x900051b4 00000004
+          0x900051b8 00000004
+          0x900051bc 00000003
+          0x900051c0 00000004
+          0x900051c4 00000003
+          0x900051c8 00000004
+          0x900051cc 00000003
+          0x900051d0 00000003
+          0x900051d4 00000004
+          0x900051d8 00000004
+          0x900051dc 00000003
+          0x900051e0 00000002
+          0x900051e4 00000004
+          0x900051e8 00000004
+          0x900051ec 00000003
+          0x900051f0 00000003
+          0x900051f4 00000003
+          0x900051f8 00000003
+          0x900051fc 00000003
+***********case_bfs_4w32t**********
+
+########     ###     ######   ######  ######## ######## 
+##     ##   ## ##   ##    ## ##    ## ##       ##     ##
+##     ##  ##   ##  ##       ##       ##       ##     ##
+########  ##     ##  ######   ######  ######   ##     ##
+##        #########       ##       ## ##       ##     ##
+##        ##     ## ##    ## ##    ## ##       ##     ##
+##        ##     ##  ######   ######  ######## ######## 
+
+============================================
+Begin test:
+metadata is                                                                                                 ./softdata/4x32/BFS_1_4.metadata:
+data is                                                                                                     ./softdata/4x32/BFS_1_4.data:
+
+
+*********
+metadata is                                                                                                 ./softdata/4x32/BFS_1_4.metadata:
+data is                                                                                                     ./softdata/4x32/BFS_1_4.data:
+Config finish!
+
+
+metadata is                                                                                                 ./softdata/4x32/BFS_1_4.metadata:
+data is                                                                                                     ./softdata/4x32/BFS_1_4.data:
+exe finish!
+============================================
+
+-------------case_bfs result------------
+--------------final result :------------
+          0x90002000 00000000
+          0x90002004 00000000
+          0x90002008 00000000
+          0x9000200c 00000000
+          0x90002010 00000000
+          0x90002014 00000000
+          0x90002018 00000000
+          0x9000201c 00000000
+          0x90002020 00000000
+          0x90002024 00000000
+          0x90002028 00000000
+          0x9000202c 00000000
+          0x90002030 00000000
+          0x90002034 00000000
+          0x90002038 00000000
+          0x9000203c 00000000
+          0x90002040 00000000
+          0x90002044 00000000
+          0x90002048 00000000
+          0x9000204c 00000000
+          0x90002050 00000000
+          0x90002054 00000000
+          0x90002058 00000000
+          0x9000205c 00000000
+          0x90002060 00000000
+          0x90002064 00000000
+          0x90002068 00000000
+          0x9000206c 00000000
+          0x90002070 00000000
+          0x90002074 00000000
+          0x90002078 00000000
+          0x9000207c 00000000
+          0x90003000 00000000
+          0x90003004 00000000
+          0x90003008 00000000
+          0x9000300c 00000000
+          0x90003010 00000000
+          0x90003014 00000000
+          0x90003018 00000000
+          0x9000301c 00000000
+          0x90003020 00000000
+          0x90003024 00000000
+          0x90003028 00000000
+          0x9000302c 00000000
+          0x90003030 00000000
+          0x90003034 00000000
+          0x90003038 00000000
+          0x9000303c 00000000
+          0x90003040 00000000
+          0x90003044 00000000
+          0x90003048 00000000
+          0x9000304c 00000000
+          0x90003050 00000000
+          0x90003054 00000000
+          0x90003058 00000000
+          0x9000305c 00000000
+          0x90003060 00000000
+          0x90003064 00000000
+          0x90003068 00000000
+          0x9000306c 00000000
+          0x90003070 00000000
+          0x90003074 00000000
+          0x90003078 00000000
+          0x9000307c 00000000
+          0x90004000 01010101
+          0x90004004 01010101
+          0x90004008 01010101
+          0x9000400c 01010101
+          0x90004010 01010101
+          0x90004014 01010101
+          0x90004018 01010101
+          0x9000401c 01010101
+          0x90004020 01010101
+          0x90004024 01010101
+          0x90004028 01010101
+          0x9000402c 01010101
+          0x90004030 01010101
+          0x90004034 01010101
+          0x90004038 01010101
+          0x9000403c 01010101
+          0x90004040 01010101
+          0x90004044 01010101
+          0x90004048 01010101
+          0x9000404c 01010101
+          0x90004050 01010101
+          0x90004054 01010101
+          0x90004058 01010101
+          0x9000405c 01010101
+          0x90004060 01010101
+          0x90004064 01010101
+          0x90004068 01010101
+          0x9000406c 01010101
+          0x90004070 01010101
+          0x90004074 01010101
+          0x90004078 01010101
+          0x9000407c 01010101
+          0x90005000 00000000
+          0x90005004 00000004
+          0x90005008 00000004
+          0x9000500c 00000003
+          0x90005010 00000003
+          0x90005014 00000004
+          0x90005018 00000003
+          0x9000501c 00000004
+          0x90005020 00000003
+          0x90005024 00000003
+          0x90005028 00000004
+          0x9000502c 00000003
+          0x90005030 00000003
+          0x90005034 00000003
+          0x90005038 00000004
+          0x9000503c 00000003
+          0x90005040 00000003
+          0x90005044 00000004
+          0x90005048 00000004
+          0x9000504c 00000003
+          0x90005050 00000004
+          0x90005054 00000002
+          0x90005058 00000002
+          0x9000505c 00000004
+          0x90005060 00000004
+          0x90005064 00000002
+          0x90005068 00000003
+          0x9000506c 00000001
+          0x90005070 00000003
+          0x90005074 00000002
+          0x90005078 00000004
+          0x9000507c 00000004
+          0x90005080 00000002
+          0x90005084 00000004
+          0x90005088 00000003
+          0x9000508c 00000004
+          0x90005090 00000003
+          0x90005094 00000001
+          0x90005098 00000003
+          0x9000509c 00000004
+          0x900050a0 00000002
+          0x900050a4 00000003
+          0x900050a8 00000003
+          0x900050ac 00000002
+          0x900050b0 00000003
+          0x900050b4 00000002
+          0x900050b8 00000004
+          0x900050bc 00000003
+          0x900050c0 00000003
+          0x900050c4 00000003
+          0x900050c8 00000003
+          0x900050cc 00000004
+          0x900050d0 00000003
+          0x900050d4 00000003
+          0x900050d8 00000004
+          0x900050dc 00000004
+          0x900050e0 00000003
+          0x900050e4 00000002
+          0x900050e8 00000004
+          0x900050ec 00000002
+          0x900050f0 00000003
+          0x900050f4 00000001
+          0x900050f8 00000004
+          0x900050fc 00000003
+          0x90005100 00000003
+          0x90005104 00000002
+          0x90005108 00000001
+          0x9000510c 00000004
+          0x90005110 00000003
+          0x90005114 00000003
+          0x90005118 00000004
+          0x9000511c 00000002
+          0x90005120 00000003
+          0x90005124 00000003
+          0x90005128 00000003
+          0x9000512c 00000003
+          0x90005130 00000002
+          0x90005134 00000003
+          0x90005138 00000003
+          0x9000513c 00000004
+          0x90005140 00000003
+          0x90005144 00000003
+          0x90005148 00000004
+          0x9000514c 00000003
+          0x90005150 00000004
+          0x90005154 00000002
+          0x90005158 00000002
+          0x9000515c 00000003
+          0x90005160 00000003
+          0x90005164 00000003
+          0x90005168 00000003
+          0x9000516c 00000004
+          0x90005170 00000003
+          0x90005174 00000003
+          0x90005178 00000003
+          0x9000517c 00000002
+          0x90005180 00000003
+          0x90005184 00000003
+          0x90005188 00000004
+          0x9000518c 00000004
+          0x90005190 00000003
+          0x90005194 00000004
+          0x90005198 00000004
+          0x9000519c 00000004
+          0x900051a0 00000004
+          0x900051a4 00000002
+          0x900051a8 00000003
+          0x900051ac 00000003
+          0x900051b0 00000003
+          0x900051b4 00000004
+          0x900051b8 00000004
+          0x900051bc 00000003
+          0x900051c0 00000004
+          0x900051c4 00000003
+          0x900051c8 00000004
+          0x900051cc 00000003
+          0x900051d0 00000003
+          0x900051d4 00000004
+          0x900051d8 00000004
+          0x900051dc 00000003
+          0x900051e0 00000002
+          0x900051e4 00000004
+          0x900051e8 00000004
+          0x900051ec 00000003
+          0x900051f0 00000003
+          0x900051f4 00000003
+          0x900051f8 00000003
+          0x900051fc 00000003
+***********case_bfs_4w32t**********
+
+########     ###     ######   ######  ######## ######## 
+##     ##   ## ##   ##    ## ##    ## ##       ##     ##
+##     ##  ##   ##  ##       ##       ##       ##     ##
+########  ##     ##  ######   ######  ######   ##     ##
+##        #########       ##       ## ##       ##     ##
+##        ##     ## ##    ## ##    ## ##       ##     ##
+##        ##     ##  ######   ######  ######## ######## 
+
+============================================
+Begin test:
+metadata is                                                                                                 ./softdata/4x32/BFS_2_4.metadata:
+data is                                                                                                     ./softdata/4x32/BFS_2_4.data:
+
+
+*********
+metadata is                                                                                                 ./softdata/4x32/BFS_2_4.metadata:
+data is                                                                                                     ./softdata/4x32/BFS_2_4.data:
+Config finish!
+
+
+metadata is                                                                                                 ./softdata/4x32/BFS_2_4.metadata:
+data is                                                                                                     ./softdata/4x32/BFS_2_4.data:
+exe finish!
+============================================
+
+-------------case_bfs result------------
+--------------final result :------------
+          0x90002000 00000000
+          0x90002004 00000000
+          0x90002008 00000000
+          0x9000200c 00000000
+          0x90002010 00000000
+          0x90002014 00000000
+          0x90002018 00000000
+          0x9000201c 00000000
+          0x90002020 00000000
+          0x90002024 00000000
+          0x90002028 00000000
+          0x9000202c 00000000
+          0x90002030 00000000
+          0x90002034 00000000
+          0x90002038 00000000
+          0x9000203c 00000000
+          0x90002040 00000000
+          0x90002044 00000000
+          0x90002048 00000000
+          0x9000204c 00000000
+          0x90002050 00000000
+          0x90002054 00000000
+          0x90002058 00000000
+          0x9000205c 00000000
+          0x90002060 00000000
+          0x90002064 00000000
+          0x90002068 00000000
+          0x9000206c 00000000
+          0x90002070 00000000
+          0x90002074 00000000
+          0x90002078 00000000
+          0x9000207c 00000000
+          0x90003000 00000000
+          0x90003004 00000000
+          0x90003008 00000000
+          0x9000300c 00000000
+          0x90003010 00000000
+          0x90003014 00000000
+          0x90003018 00000000
+          0x9000301c 00000000
+          0x90003020 00000000
+          0x90003024 00000000
+          0x90003028 00000000
+          0x9000302c 00000000
+          0x90003030 00000000
+          0x90003034 00000000
+          0x90003038 00000000
+          0x9000303c 00000000
+          0x90003040 00000000
+          0x90003044 00000000
+          0x90003048 00000000
+          0x9000304c 00000000
+          0x90003050 00000000
+          0x90003054 00000000
+          0x90003058 00000000
+          0x9000305c 00000000
+          0x90003060 00000000
+          0x90003064 00000000
+          0x90003068 00000000
+          0x9000306c 00000000
+          0x90003070 00000000
+          0x90003074 00000000
+          0x90003078 00000000
+          0x9000307c 00000000
+          0x90004000 01010101
+          0x90004004 01010101
+          0x90004008 01010101
+          0x9000400c 01010101
+          0x90004010 01010101
+          0x90004014 01010101
+          0x90004018 01010101
+          0x9000401c 01010101
+          0x90004020 01010101
+          0x90004024 01010101
+          0x90004028 01010101
+          0x9000402c 01010101
+          0x90004030 01010101
+          0x90004034 01010101
+          0x90004038 01010101
+          0x9000403c 01010101
+          0x90004040 01010101
+          0x90004044 01010101
+          0x90004048 01010101
+          0x9000404c 01010101
+          0x90004050 01010101
+          0x90004054 01010101
+          0x90004058 01010101
+          0x9000405c 01010101
+          0x90004060 01010101
+          0x90004064 01010101
+          0x90004068 01010101
+          0x9000406c 01010101
+          0x90004070 01010101
+          0x90004074 01010101
+          0x90004078 01010101
+          0x9000407c 01010101
+          0x90005000 00000000
+          0x90005004 00000004
+          0x90005008 00000004
+          0x9000500c 00000003
+          0x90005010 00000003
+          0x90005014 00000004
+          0x90005018 00000003
+          0x9000501c 00000004
+          0x90005020 00000003
+          0x90005024 00000003
+          0x90005028 00000004
+          0x9000502c 00000003
+          0x90005030 00000003
+          0x90005034 00000003
+          0x90005038 00000004
+          0x9000503c 00000003
+          0x90005040 00000003
+          0x90005044 00000004
+          0x90005048 00000004
+          0x9000504c 00000003
+          0x90005050 00000004
+          0x90005054 00000002
+          0x90005058 00000002
+          0x9000505c 00000004
+          0x90005060 00000004
+          0x90005064 00000002
+          0x90005068 00000003
+          0x9000506c 00000001
+          0x90005070 00000003
+          0x90005074 00000002
+          0x90005078 00000004
+          0x9000507c 00000004
+          0x90005080 00000002
+          0x90005084 00000004
+          0x90005088 00000003
+          0x9000508c 00000004
+          0x90005090 00000003
+          0x90005094 00000001
+          0x90005098 00000003
+          0x9000509c 00000004
+          0x900050a0 00000002
+          0x900050a4 00000003
+          0x900050a8 00000003
+          0x900050ac 00000002
+          0x900050b0 00000003
+          0x900050b4 00000002
+          0x900050b8 00000004
+          0x900050bc 00000003
+          0x900050c0 00000003
+          0x900050c4 00000003
+          0x900050c8 00000003
+          0x900050cc 00000004
+          0x900050d0 00000003
+          0x900050d4 00000003
+          0x900050d8 00000004
+          0x900050dc 00000004
+          0x900050e0 00000003
+          0x900050e4 00000002
+          0x900050e8 00000004
+          0x900050ec 00000002
+          0x900050f0 00000003
+          0x900050f4 00000001
+          0x900050f8 00000004
+          0x900050fc 00000003
+          0x90005100 00000003
+          0x90005104 00000002
+          0x90005108 00000001
+          0x9000510c 00000004
+          0x90005110 00000003
+          0x90005114 00000003
+          0x90005118 00000004
+          0x9000511c 00000002
+          0x90005120 00000003
+          0x90005124 00000003
+          0x90005128 00000003
+          0x9000512c 00000003
+          0x90005130 00000002
+          0x90005134 00000003
+          0x90005138 00000003
+          0x9000513c 00000004
+          0x90005140 00000003
+          0x90005144 00000003
+          0x90005148 00000004
+          0x9000514c 00000003
+          0x90005150 00000004
+          0x90005154 00000002
+          0x90005158 00000002
+          0x9000515c 00000003
+          0x90005160 00000003
+          0x90005164 00000003
+          0x90005168 00000003
+          0x9000516c 00000004
+          0x90005170 00000003
+          0x90005174 00000003
+          0x90005178 00000003
+          0x9000517c 00000002
+          0x90005180 00000003
+          0x90005184 00000003
+          0x90005188 00000004
+          0x9000518c 00000004
+          0x90005190 00000003
+          0x90005194 00000004
+          0x90005198 00000004
+          0x9000519c 00000004
+          0x900051a0 00000004
+          0x900051a4 00000002
+          0x900051a8 00000003
+          0x900051ac 00000003
+          0x900051b0 00000003
+          0x900051b4 00000004
+          0x900051b8 00000004
+          0x900051bc 00000003
+          0x900051c0 00000004
+          0x900051c4 00000003
+          0x900051c8 00000004
+          0x900051cc 00000003
+          0x900051d0 00000003
+          0x900051d4 00000004
+          0x900051d8 00000004
+          0x900051dc 00000003
+          0x900051e0 00000002
+          0x900051e4 00000004
+          0x900051e8 00000004
+          0x900051ec 00000003
+          0x900051f0 00000003
+          0x900051f4 00000003
+          0x900051f8 00000003
+          0x900051fc 00000003
+***********case_bfs_4w32t**********
+
+########     ###     ######   ######  ######## ######## 
+##     ##   ## ##   ##    ## ##    ## ##       ##     ##
+##     ##  ##   ##  ##       ##       ##       ##     ##
+########  ##     ##  ######   ######  ######   ##     ##
+##        #########       ##       ## ##       ##     ##
+##        ##     ## ##    ## ##    ## ##       ##     ##
+##        ##     ##  ######   ######  ######## ######## 
+
+$finish called from file "./tc.v", line 55.
+$finish at simulation time            493645000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 493645000 ps
+CPU Time:     96.920 seconds;       Data structure size:  33.7Mb
+Tue Jun 11 21:41:23 2024
+CPU time: 9.158 seconds to compile + 1.392 seconds to elab + .334 seconds to link + 96.996 seconds in simulation

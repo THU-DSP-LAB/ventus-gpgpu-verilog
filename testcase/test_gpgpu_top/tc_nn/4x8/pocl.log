@@ -1,0 +1,46 @@
+Number of records: 28
+Finding the 5 closest neighbors.
+Number of platforms detected:1
+Platform 0:	Vendor: The pocl project
+[INFO]: [HW DRIVER] in [FILE] ventus.cpp,[LINE]25,[fn] vt_dev_open: vt_dev_open : hello world from ventus.cpp
+spike device initialize: allocating local memory: to allocate at 0x70000000 with 268435456 bytes 
+spike device initialize: allocating pc source memory: to allocate at 0x80000000 with 268435456 bytes 
+	Device: 0	Vendor: THU
+		Name: Ventus GPGPU device
+Using Platform 0 	 Device No 0 
+Creating GPU Context
+
+	nearestNeighbor_kernel.cl
+### Triple: riscv32, CPU: ventus-gpgpu
+to allocate at 0x90000000 with 4096 bytes 
+to copy to 0x90000000 with 224 bytes
+to allocate at 0x90001000 with 4096 bytes 
+notice that ventus hasn't support local buffer as argument yet.
+to allocate at 0x90002000 with 4096 bytes 
+to copy to 0x90002000 with 20 bytes
+to allocate at 0x90003000 with 131072 bytes 
+to allocate at 0x90023000 with 4096 bytes 
+to copy to 0x90023000 with 64 bytes
+arg gpgpu is numw:4,numt:8,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x8000,pdsbase:0x90003000,knlbase:0x90023000
+vaddr mem scope is -m0x70000000:0x90024000
+src file is object.riscv, run log is written to object.riscv.log
+spike -l --log-commits -p4 --isa rv32gcv_zfh --pc=0x80000000 -m0x70000000:0x90024000 --varch vlen:256,elen:32 --gpgpuarch numw:4,numt:8,numwg:1,kernelx:1,kernely:1,kernelz:1,ldssize:0x1000,pdssize:0x8000,pdsbase:0x90003000,knlbase:0x90023000 --log=object.riscv.log object.riscv 
+warp number: 4 thread number = 8  workgroup number = 1 workgroup dimension:1*1*1 lds size: 1000 pds size: 8000 lds base: 70000000 pds base: 90003000 knl base: 90023000
+all warps reach the endprg. now proc 0 will end the simulation.
+Log file object.riscv.log renamed successfully to NearestNeighbor_0.log.
+to copy from 0x90001000 with 112 bytes
+# Records	Write(s) [size]		Kernel(s)	Read(s)  [size]		Total(s)
+28        	0.000030 [0.00MB]	0.624763	0.000009 [0.00MB]	0.624802
+
+Init: 46.126999
+MemAlloc: 0.006000
+HtoD: 0.029650
+Exec: 624.763245
+DtoH: 0.009469
+Close: 0.023000
+Total: 986.455994
+1957  6 25 12 27 GORDON     37.1  86.6   24  792 --> Distance=7.872102
+1980 11  6 12 18 SANDY      15.8  84.2  153   47 --> Distance=15.338840
+1985  3 19  0 20 HELENE     46.6  78.2   46  314 --> Distance=20.366640
+1952 12 22  0 15 VALERIE    14.2  74.6   46  792 --> Distance=22.063545
+1951  3  8  6  5 ISAAC       9.6 104.8   21  322 --> Distance=25.203176
