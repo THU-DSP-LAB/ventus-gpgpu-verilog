@@ -36,9 +36,7 @@ SM核的硬件结构框图:
 
 以gaussian用例为例，进入`testcase/test_gpgpu_axi_top/tc_gaussian`:
 
-- 打开`tc.v`,选择case的warp数和thread数
-
-> 在`src/define/define.v`目录下，修改`NUM_THREAD`，可以更改warp内的thread数量
+> 在仿真之前，需要确认GPGPU单个warp的大小：在`src/define/define.v`目录下，修改`NUM_THREAD`  
 
 - 用VCS仿真:
 
