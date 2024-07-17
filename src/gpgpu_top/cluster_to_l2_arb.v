@@ -22,7 +22,7 @@ module cluster_to_l2_arb (
   output [`NUM_CLUSTER-1:0]                mem_req_vec_in_ready_o   ,
   input  [`NUM_CLUSTER*`OP_BITS-1:0]       mem_req_vec_in_opcode_i  ,
   input  [`NUM_CLUSTER*`SIZE_BITS-1:0]     mem_req_vec_in_size_i    ,
-  input  [`NUM_CLUSTER*`CLUSTER_SOURCE-1:0]mem_req_vec_in_source_i  ,
+  input  [`NUM_CLUSTER*`SOURCE_BITS-1:0]   mem_req_vec_in_source_i  ,
   input  [`NUM_CLUSTER*`ADDRESS_BITS-1:0]  mem_req_vec_in_address_i ,
   input  [`NUM_CLUSTER*`MASK_BITS-1:0]     mem_req_vec_in_mask_i    ,
   input  [`NUM_CLUSTER*`DATA_BITS-1:0]     mem_req_vec_in_data_i    ,
@@ -51,7 +51,7 @@ module cluster_to_l2_arb (
   input  [`NUM_CLUSTER-1:0]                mem_rsp_vec_out_ready_i  ,
   output [`NUM_CLUSTER*`OP_BITS-1:0]       mem_rsp_vec_out_opcode_o ,
   output [`NUM_CLUSTER*`SIZE_BITS-1:0]     mem_rsp_vec_out_size_o   ,
-  output [`NUM_CLUSTER*`CLUSTER_SOURCE-1:0]mem_rsp_vec_out_source_o ,
+  output [`NUM_CLUSTER*`SOURCE_BITS-1:0]   mem_rsp_vec_out_source_o ,
   output [`NUM_CLUSTER*`ADDRESS_BITS-1:0]  mem_rsp_vec_out_address_o,
   output [`NUM_CLUSTER*`DATA_BITS-1:0]     mem_rsp_vec_out_data_o   ,
   output [`NUM_CLUSTER*`PARAM_BITS-1:0]    mem_rsp_vec_out_param_o  
@@ -110,17 +110,16 @@ module cluster_to_l2_arb (
   assign mem_req_out_data_o    = mem_req_vec_in_data_i[`DATA_BITS*(mem_req_vec_in_valid_bin+1)-1-:`DATA_BITS]         ;
   assign mem_req_out_param_o   = mem_req_vec_in_param_i[`PARAM_BITS*(mem_req_vec_in_valid_bin+1)-1-:`PARAM_BITS]      ;
   assign mem_req_out_source_o  = (`NUM_CLUSTER==1) ? 
-    mem_req_vec_in_source_i[`CLUSTER_SOURCE*(mem_req_vec_in_valid_bin+1)-1-:`CLUSTER_SOURCE] : 
-    {mem_req_vec_in_valid_bin,mem_req_vec_in_source_i[`CLUSTER_SOURCE*(mem_req_vec_in_valid_bin+1)-1-:`CLUSTER_SOURCE]} ;
+    mem_req_vec_in_source_i[`SOURCE_BITS*(mem_req_vec_in_valid_bin+1)-1-:`SOURCE_BITS] : 
+    {mem_req_vec_in_valid_bin,mem_req_vec_in_source_i[`SOURCE_BITS*(mem_req_vec_in_valid_bin+1)-1-:`SOURCE_BITS]} ;
 
   //mem_req_vec_in_ready_o
-  //assign mem_req_vec_in_ready_o[0] = mem_req_out_ready_i;
+  assign mem_req_vec_in_ready_o[0] = mem_req_out_ready_i;
 
   genvar i;
   generate
-    for(i=0;i<`NUM_CLUSTER;i=i+1) begin: MEM_REQ
-      //assign mem_req_vec_in_ready_o[i] = !(|mem_req_vec_in_ready_o[i-1:0]) && mem_req_out_ready_i;
-      assign mem_req_vec_in_ready_o[i] = mem_req_out_ready_i;
+    for(i=1;i<`NUM_CLUSTER;i=i+1) begin: MEM_REQ
+      assign mem_req_vec_in_ready_o[i] = !(|mem_req_vec_in_ready_o[i-1:0]) && mem_req_out_ready_i;
     end
   endgenerate
 
@@ -131,12 +130,12 @@ module cluster_to_l2_arb (
         ((j==mem_rsp_in_source_i[`SOURCE_BITS-1-:CLUSTER_BITS]) && mem_rsp_in_valid_i);
         //((j==mem_rsp_in_source_i[`SOURCE_BITS-1-:$clog2(`NUM_CLUSTER)]) && mem_rsp_in_valid_i);
       
-      assign mem_rsp_vec_out_opcode_o[`OP_BITS*(j+1)-1-:`OP_BITS]               = mem_rsp_in_opcode_i ;
-      assign mem_rsp_vec_out_size_o[`SIZE_BITS*(j+1)-1-:`SIZE_BITS]             = mem_rsp_in_size_i   ;
-      assign mem_rsp_vec_out_address_o[`ADDRESS_BITS*(j+1)-1-:`ADDRESS_BITS]    = mem_rsp_in_address_i;
-      assign mem_rsp_vec_out_data_o[`DATA_BITS*(j+1)-1-:`DATA_BITS]             = mem_rsp_in_data_i   ;
-      assign mem_rsp_vec_out_param_o[`PARAM_BITS*(j+1)-1-:`PARAM_BITS]          = mem_rsp_in_param_i  ;
-      assign mem_rsp_vec_out_source_o[`CLUSTER_SOURCE*(j+1)-1-:`CLUSTER_SOURCE] = mem_rsp_in_source_i[`CLUSTER_SOURCE-1:0];
+      assign mem_rsp_vec_out_opcode_o[`OP_BITS*(j+1)-1-:`OP_BITS]             = mem_rsp_in_opcode_i ;
+      assign mem_rsp_vec_out_size_o[`SIZE_BITS*(j+1)-1-:`SIZE_BITS]           = mem_rsp_in_size_i   ;
+      assign mem_rsp_vec_out_address_o[`ADDRESS_BITS*(j+1)-1-:`ADDRESS_BITS]  = mem_rsp_in_address_i;
+      assign mem_rsp_vec_out_data_o[`DATA_BITS*(j+1)-1-:`DATA_BITS]           = mem_rsp_in_data_i   ;
+      assign mem_rsp_vec_out_param_o[`PARAM_BITS*(j+1)-1-:`PARAM_BITS]        = mem_rsp_in_param_i  ;
+      assign mem_rsp_vec_out_source_o[`SOURCE_BITS*(j+1)-1-:`SOURCE_BITS]     = mem_rsp_in_source_i[`SOURCE_BITS-1:0];
     end
   endgenerate
  

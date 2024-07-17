@@ -33,7 +33,7 @@ module sm2cluster_arb (
   output                                                          mem_req_out_valid_o       ,
   output [`OP_BITS-1:0]                                           mem_req_out_opcode_o      ,
   output [`SIZE_BITS-1:0]                                         mem_req_out_size_o        ,
-  output [`CLUSTER_SOURCE-1:0]                                    mem_req_out_source_o      ,
+  output [`SOURCE_BITS-1:0]                                       mem_req_out_source_o      ,
   output [`ADDRESS_BITS-1:0]                                      mem_req_out_address_o     ,
   output [`MASK_BITS-1:0]                                         mem_req_out_mask_o        ,
   output [`DATA_BITS-1:0]                                         mem_req_out_data_o        ,
@@ -43,7 +43,7 @@ module sm2cluster_arb (
   input                                                           mem_rsp_in_valid_i        ,
   input  [`OP_BITS-1:0]                                           mem_rsp_in_opcode_i       ,
   input  [`SIZE_BITS-1:0]                                         mem_rsp_in_size_i         ,
-  input  [`CLUSTER_SOURCE-1:0]                                    mem_rsp_in_source_i       ,
+  input  [`SOURCE_BITS-1:0]                                       mem_rsp_in_source_i       ,
   input  [`DATA_BITS-1:0]                                         mem_rsp_in_data_i         ,
   input  [2:0]                                                    mem_rsp_in_param_i        ,
   input  [`ADDRESS_BITS-1:0]                                      mem_rsp_in_address_i      ,
@@ -56,7 +56,7 @@ module sm2cluster_arb (
   output [`NUM_SM_IN_CLUSTER*`D_SOURCE-1:0]                       mem_rsp_vec_out_d_source_o   
   );
 
-  localparam FIFO_WIDTH = `OP_BITS+`SIZE_BITS+`CLUSTER_SOURCE+`ADDRESS_BITS+`MASK_BITS+`DATA_BITS+3;
+  localparam FIFO_WIDTH = `OP_BITS+`SIZE_BITS+`SOURCE_BITS+`ADDRESS_BITS+`MASK_BITS+`DATA_BITS+3;
 
   wire memReqBuf_w_ready;
   wire [FIFO_WIDTH-1:0] memReqBuf_data_in,memReqBuf_out_data;
@@ -66,7 +66,7 @@ module sm2cluster_arb (
 
   wire [`OP_BITS-1:0] memReqBuf_in_opcode;
   wire [`SIZE_BITS-1:0] memReqBuf_in_size;
-  wire [`CLUSTER_SOURCE-1:0] memReqBuf_in_source;
+  wire [`SOURCE_BITS-1:0] memReqBuf_in_source;
   wire [`ADDRESS_BITS-1:0] memReqBuf_in_address;
   wire [`MASK_BITS-1:0] memReqBuf_in_mask;
   wire [`DATA_BITS-1:0] memReqBuf_in_data;
@@ -77,18 +77,18 @@ module sm2cluster_arb (
     //assign mem_req_vec_in_ready_o[i] = (i == in_valid_grant_bin) ? memReqBuf_w_ready : 'h0;
     assign mem_req_vec_in_ready_o[i] = memReqBuf_w_ready;
     assign mem_rsp_vec_out_d_data_o[`DCACHE_BLOCKWORDS*`WORDLENGTH*(i+1)-1-:`DCACHE_BLOCKWORDS*`WORDLENGTH] = mem_rsp_in_data_i;
-    assign mem_rsp_vec_out_d_source_o[`D_SOURCE*(i+1)-1-:`D_SOURCE] = (`NUM_SM_IN_CLUSTER==1) ? mem_rsp_in_source_i : mem_rsp_in_source_i[`D_SOURCE-1:0];
+    assign mem_rsp_vec_out_d_source_o[`CLUSTER_SOURCE*(i+1)-1-:`CLUSTER_SOURCE] = mem_rsp_in_source_i;
     assign mem_rsp_vec_out_d_addr_o[`WORDLENGTH*(i+1)-1-:`WORDLENGTH] = mem_rsp_in_address_i;
     assign mem_rsp_vec_out_d_opcode_o[3*(i+1)-1-:3] = mem_rsp_in_opcode_i;
-    assign mem_rsp_vec_out_valid_o[i] = (`NUM_SM_IN_CLUSTER==1) ? mem_rsp_in_valid_i : (mem_rsp_in_source_i[`CLUSTER_SOURCE-1-:`NUM_CLUSTER_DEPTH]==i) && mem_rsp_in_valid_i;
+    assign mem_rsp_vec_out_valid_o[i] = (`NUM_SM_IN_CLUSTER==1) ? mem_rsp_in_valid_i : (mem_rsp_in_source_i[`SOURCE_BITS-1-:`NUM_CLUSTER_DEPTH]==i) && mem_rsp_in_valid_i;
   end 
   endgenerate
 
-  assign mem_rsp_in_ready_o = (`NUM_SM_IN_CLUSTER==1) ? mem_rsp_vec_out_ready_i[0] : mem_rsp_vec_out_ready_i[mem_rsp_in_source_i[`CLUSTER_SOURCE-1-:`NUM_CLUSTER_DEPTH]];
+  assign mem_rsp_in_ready_o = (`NUM_SM_IN_CLUSTER==1) ? mem_rsp_vec_out_ready_i[0] : mem_rsp_vec_out_ready_i[mem_rsp_in_source_i[`SOURCE_BITS-1-:`NUM_CLUSTER_DEPTH]];
 
   assign memReqBuf_in_opcode = mem_req_vec_in_a_opcode_i[(3*(in_valid_grant_bin+1)-1)-:3];
   assign memReqBuf_in_source = (`NUM_SM_IN_CLUSTER==1) ? mem_req_vec_in_a_source_i[`CLUSTER_SOURCE*(in_valid_grant_bin+1)-1-:`CLUSTER_SOURCE] : 
-                                                         {in_valid_grant_bin,mem_req_vec_in_a_source_i[`D_SOURCE*(in_valid_grant_bin+1)-1-:`D_SOURCE]};
+                                                         {in_valid_grant_bin,mem_req_vec_in_a_source_i[`CLUSTER_SOURCE*(in_valid_grant_bin+1)-1-:`CLUSTER_SOURCE]};
   assign memReqBuf_in_size = 'h0;
   assign memReqBuf_in_address = mem_req_vec_in_a_addr_i[(`XLEN*(in_valid_grant_bin+1)-1)-:`XLEN];
   assign memReqBuf_in_mask = mem_req_vec_in_a_mask_i[`DCACHE_BLOCKWORDS*`BYTESOFWORD*(in_valid_grant_bin+1)-1-:`DCACHE_BLOCKWORDS*`BYTESOFWORD];
