@@ -162,7 +162,7 @@ module host_inter(
       $display("*********");
       $display("metadata is %s:", fn_metadata);
       $display("data is %s:", fn_data);
-      $display("Config finish!  time: %p ns",$realtime);
+      $display("Config finish!  time: %t ns",$realtime);
       cycle_count[0] = $realtime;
       $display("*********");
       $display("");
@@ -231,13 +231,13 @@ module host_inter(
       $display("*********");
       $display("metadata is %s:", fn_metadata);
       $display("data is %s:", fn_data);
-      $display("exe finish!     time: %p ns",$realtime);
+      $display("exe finish!     time: %t ns",$realtime);
       cycle_count[1] = $realtime;
       $display("*********");
       $display("");
       kernel_cycles = (cycle_count[1]-cycle_count[0])/10;
       $display("*********");
-      $display("Single kernel need : %p cycles",kernel_cycles);
+      $display("Single kernel need : %t cycles",kernel_cycles);
       $display("*********");
       $display("");
       $display("============================================");

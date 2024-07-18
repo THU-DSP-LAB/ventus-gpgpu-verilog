@@ -88,7 +88,7 @@ module operandcollector_top(
 
   // to exe_data
   output reg                                    out_valid_o                                ,
-  input  reg                                    out_ready_i                                ,
+  input                                         out_ready_i                                ,
   output reg [`DEPTH_WARP-1:0]                  out_wid_o                                  ,
   output reg [32-1:0]                           out_inst_o                                 ,
   //output reg    [6-1:0]                            out_imm_ext_o                              ,
@@ -430,10 +430,10 @@ module operandcollector_top(
   reg [`NUM_BANK-1:0]                               scalar_valid_q  ;
   reg [`NUM_BANK-1:0]                               vector_valid_q  ;
   
-  reg [$clog2(4*`NUM_COLLECTORUNIT)-1:0]         chosen_scalar_tmp [`NUM_BANK-1:0];
-  reg [$clog2(4*`NUM_COLLECTORUNIT)-1:0]         chosen_vector_tmp [`NUM_BANK-1:0];
-  reg                                            scalar_valid_tmp  [`NUM_BANK-1:0];
-  reg                                            vector_valid_tmp  [`NUM_BANK-1:0];
+  wire [$clog2(4*`NUM_COLLECTORUNIT)-1:0]         chosen_scalar_tmp [`NUM_BANK-1:0];
+  wire [$clog2(4*`NUM_COLLECTORUNIT)-1:0]         chosen_vector_tmp [`NUM_BANK-1:0];
+  wire                                            scalar_valid_tmp  [`NUM_BANK-1:0];
+  wire                                            vector_valid_tmp  [`NUM_BANK-1:0];
 
 
   // Readchosen needs to delay one tick to match bank reading

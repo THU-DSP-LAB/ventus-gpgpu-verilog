@@ -53,9 +53,9 @@ module lru_matrix #(
           //lru_index_nxt     = {NUM_WAY{1'b0}}   ;
         //end else if (matrix_nxt[NUM_WAY*(i+1)-1-:NUM_WAY] == {NUM_WAY{1'b0}})begin
         if (matrix_nxt[NUM_WAY*(j+1)-1-:NUM_WAY] == {NUM_WAY{1'b0}})begin
-          lru_index_nxt[j]  = 1'b1           ;
+          lru_index_nxt[j]  = 1'b1;
         end else begin
-          lru_index_nxt[j]  = {NUM_WAY{1'b0}};
+          lru_index_nxt[j]  = 1'b0;
         end
       end
 
@@ -64,16 +64,11 @@ module lru_matrix #(
         //always@(*) begin
             //matrix_nxt = matrix ;
           if(!rst_n) begin
-              matrix_nxt[NUM_WAY*j+k] <= 'h0;//{NUM_WAY*NUM_WAY{1'b0}}   ;
-          end else if(update_entry_i && j==update_index_i && k!=update_index_i) begin
+              matrix_nxt[NUM_WAY*j+k] <= 1'b0;
+          end else if(update_entry_i && k==update_index_i) begin
+              matrix_nxt[NUM_WAY*j+k] <= 1'b0 ;
+          end else if(update_entry_i && j==update_index_i) begin
               matrix_nxt[NUM_WAY*j+k] <= 1'b1 ;
-          end else if(update_entry_i && j==update_index_i && k==update_index_i) begin
-              matrix_nxt[NUM_WAY*j+k] <= 1'b0 ;
-          end else if(update_entry_i && j!=update_index_i && k==update_index_i) begin
-              matrix_nxt[NUM_WAY*j+k] <= 1'b0 ;
-          end else begin
-              matrix_nxt[NUM_WAY*j+k] <= matrix_nxt[NUM_WAY*j+k] ;
-              //matrix_nxt[NUM_WAY*j+k] = matrix[NUM_WAY*j+k] ;
           end
         end
       end

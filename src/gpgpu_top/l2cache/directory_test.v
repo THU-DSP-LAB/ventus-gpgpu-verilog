@@ -78,7 +78,7 @@ module directory_test#(
   wire [`SET_BITS-1:0] cc_dir_w_set_addr           ; //set waddr of this sram
   wire cc_dir_r_valid                              ;  
   //reg [`TAG_BITS-1:0] cc_dir_r_data[NUM_WAY-1:0] ; //rdata of this sram
-  reg  [(NUM_WAY)*`TAG_BITS-1:0] cc_dir_r_data     ;
+  wire [(NUM_WAY)*`TAG_BITS-1:0] cc_dir_r_data     ;
   //wire [`TAG_BITS-1:0] regout [NUM_WAY-1:0];
   wire [(NUM_WAY)*`TAG_BITS-1:0] regout       ;
   
