@@ -17,7 +17,7 @@
 
 module issue(
   //input part of issue
-  output reg                                              issue_in_ready_o                                        ,
+  output                                                  issue_in_ready_o                                        ,
   input                                                   issue_in_valid_i                                        ,
   input [`NUM_THREAD*`XLEN-1:0]                           issue_in_vExeData_in1_i                                 ,
   input [`NUM_THREAD*`XLEN-1:0]                           issue_in_vExeData_in2_i                                 ,

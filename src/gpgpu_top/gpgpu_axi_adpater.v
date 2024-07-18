@@ -1,0 +1,161 @@
+`include "define.v"
+
+module gpgpu_axi_adapter_top
+(
+  input                            clk                ,
+  input                            rst_n              ,
+
+  output                           s_axilite_awready  ,
+  input                            s_axilite_awvalid  ,
+  input  [`AXILITE_ADDR_WIDTH-1:0] s_axilite_awaddr   ,
+  input  [`AXILITE_PROT_WIDTH-1:0] s_axilite_awprot   ,
+
+  output                           s_axilite_wready   ,
+  input                            s_axilite_wvalid   ,
+  input  [`AXILITE_DATA_WIDTH-1:0] s_axilite_wdata    ,
+  input  [`AXILITE_STRB_WIDTH-1:0] s_axilite_wstrb    ,
+
+  input                            s_axilite_bready   ,
+  output                           s_axilite_bvalid   ,
+  output [`AXILITE_RESP_WIDTH-1:0] s_axilite_bresp    ,
+
+  output                           s_axilite_arready  ,
+  input                            s_axilite_arvalid  ,
+  input  [`AXILITE_ADDR_WIDTH-1:0] s_axilite_araddr   ,
+  input  [`AXILITE_PROT_WIDTH-1:0] s_axilite_arprot   ,
+
+  input                            s_axilite_rready   ,
+  output [`AXILITE_DATA_WIDTH-1:0] s_axilite_rdata    ,
+  output [`AXILITE_RESP_WIDTH-1:0] s_axilite_rresp    ,
+  output                           s_axilite_rvalid   , 
+
+  input                            m_axi_awready      ,
+  output                           m_axi_awvalid      ,
+  output [`AXI_ID_WIDTH-1:0]       m_axi_awid         ,
+  output [`AXI_ADDR_WIDTH-1:0]     m_axi_awaddr       ,
+  output [`AXI_LEN_WIDTH-1:0]      m_axi_awlen        ,
+  output [`AXI_SIZE_WIDTH-1:0]     m_axi_awsize       ,
+  output [`AXI_BURST_WIDTH-1:0]    m_axi_awburst      ,
+  output                           m_axi_awlock       ,
+  output [`AXI_CACHE_WIDTH-1:0]    m_axi_awcache      ,
+  output [`AXI_PROT_WIDTH-1:0]     m_axi_awprot       ,
+  output [`AXI_QOS_WIDTH-1:0]      m_axi_awqos        ,
+  output [`AXI_REGION_WIDTH-1:0]   m_axi_awregion     ,
+  output [`AXI_ATOP_WIDTH-1:0]     m_axi_awatop       ,
+  output [`AXI_USER_WIDTH-1:0]     m_axi_awuser       ,
+
+  input                            m_axi_wready       ,
+  output                           m_axi_wvalid       ,
+  output [`AXI_DATA_WIDTH-1:0]     m_axi_wdata        ,
+  output [(`AXI_DATA_WIDTH/8)-1:0] m_axi_wstrb        ,
+  output                           m_axi_wlast        ,
+  output [`AXI_USER_WIDTH-1:0]     m_axi_wuser        ,
+
+  output                           m_axi_bready       ,
+  input                            m_axi_bvalid       ,
+  input  [`AXI_ID_WIDTH-1:0]       m_axi_bid          ,
+  input  [`AXI_RESP_WIDTH-1:0]     m_axi_bresp        ,
+  input  [`AXI_USER_WIDTH-1:0]     m_axi_buser        ,
+  
+  input                            m_axi_arready      ,
+  output                           m_axi_arvalid      ,
+  output [`AXI_ID_WIDTH-1:0]       m_axi_arid         ,
+  output [`AXI_ADDR_WIDTH-1:0]     m_axi_araddr       ,
+  output [`AXI_LEN_WIDTH-1:0]      m_axi_arlen        ,
+  output [`AXI_SIZE_WIDTH-1:0]     m_axi_arsize       ,
+  output [`AXI_BURST_WIDTH-1:0]    m_axi_arburst      ,
+  output                           m_axi_arlock       ,
+  output [`AXI_CACHE_WIDTH-1:0]    m_axi_arcache      ,
+  output [`AXI_PROT_WIDTH-1:0]     m_axi_arprot       ,
+  output [`AXI_QOS_WIDTH-1:0]      m_axi_arqos        ,
+  output [`AXI_REGION_WIDTH-1:0]   m_axi_arregion     ,
+  output [`AXI_USER_WIDTH-1:0]     m_axi_aruser       ,
+
+  output                           m_axi_rready       ,
+  input                            m_axi_rvalid       ,
+  input  [`AXI_ID_WIDTH-1:0]       m_axi_rid          ,
+  input  [`AXI_DATA_WIDTH-1:0]     m_axi_rdata        ,
+  input  [`AXI_RESP_WIDTH-1:0]     m_axi_rresp        ,
+  input                            m_axi_rlast        ,
+  input  [`AXI_USER_WIDTH-1:0]     m_axi_ruser         
+);
+  gpgpu_axi_top u_gpgpu_axi_top(
+    .clk                (clk                ),
+    .rst_n              (rst_n              ),
+  
+    .s_axilite_awready_o(s_axilite_awready),
+    .s_axilite_awvalid_i(s_axilite_awvalid),
+    .s_axilite_awaddr_i (s_axilite_awaddr ),
+    .s_axilite_awprot_i (s_axilite_awprot ),
+ 
+    .s_axilite_wready_o (s_axilite_wready ),
+    .s_axilite_wvalid_i (s_axilite_wvalid ),
+    .s_axilite_wdata_i  (s_axilite_wdata  ),
+    .s_axilite_wstrb_i  (s_axilite_wstrb  ),
+
+    .s_axilite_bready_i (s_axilite_bready ),
+    .s_axilite_bvalid_o (s_axilite_bvalid ),
+    .s_axilite_bresp_o  (s_axilite_bresp  ),
+
+    .s_axilite_arready_o(s_axilite_arready),
+    .s_axilite_arvalid_i(s_axilite_arvalid),
+    .s_axilite_araddr_i (s_axilite_araddr ),
+    .s_axilite_arprot_i (s_axilite_arprot ),
+
+    .s_axilite_rready_i (s_axilite_rready ),
+    .s_axilite_rdata_o  (s_axilite_rdata  ),
+    .s_axilite_rresp_o  (s_axilite_rresp  ),
+    .s_axilite_rvalid_o (s_axilite_rvalid ),
+
+    .m_axi_awready_i    (m_axi_awready    ),
+    .m_axi_awvalid_o    (m_axi_awvalid    ),
+    .m_axi_awid_o       (m_axi_awid       ),
+    .m_axi_awaddr_o     (m_axi_awaddr     ),
+    .m_axi_awlen_o      (m_axi_awlen      ),
+    .m_axi_awsize_o     (m_axi_awsize     ),
+    .m_axi_awburst_o    (m_axi_awburst    ),
+    .m_axi_awlock_o     (m_axi_awlock     ),
+    .m_axi_awcache_o    (m_axi_awcache    ),
+    .m_axi_awprot_o     (m_axi_awprot     ),
+    .m_axi_awqos_o      (m_axi_awqos      ),
+    .m_axi_awregion_o   (m_axi_awregion   ),
+    .m_axi_awatop_o     (m_axi_awatop     ),
+    .m_axi_awuser_o     (m_axi_awuser     ),
+
+    .m_axi_wready_i     (m_axi_wready     ),
+    .m_axi_wvalid_o     (m_axi_wvalid     ),
+    .m_axi_wdata_o      (m_axi_wdata      ),
+    .m_axi_wstrb_o      (m_axi_wstrb      ),
+    .m_axi_wlast_o      (m_axi_wlast      ),
+    .m_axi_wuser_o      (m_axi_wuser      ),
+
+    .m_axi_bready_o     (m_axi_bready     ),
+    .m_axi_bvalid_i     (m_axi_bvalid     ),
+    .m_axi_bid_i        (m_axi_bid        ),
+    .m_axi_bresp_i      (m_axi_bresp      ),
+    .m_axi_buser_i      (m_axi_buser      ),
+
+    .m_axi_arready_i    (m_axi_arready    ),
+    .m_axi_arvalid_o    (m_axi_arvalid    ),
+    .m_axi_arid_o       (m_axi_arid       ),
+    .m_axi_araddr_o     (m_axi_araddr     ),
+    .m_axi_arlen_o      (m_axi_arlen      ),
+    .m_axi_arsize_o     (m_axi_arsize     ),
+    .m_axi_arburst_o    (m_axi_arburst    ),
+    .m_axi_arlock_o     (m_axi_arlock     ),
+    .m_axi_arcache_o    (m_axi_arcache    ),
+    .m_axi_arprot_o     (m_axi_arprot     ),
+    .m_axi_arqos_o      (m_axi_arqos      ),
+    .m_axi_arregion_o   (m_axi_arregion   ),
+    .m_axi_aruser_o     (m_axi_aruser     ),
+
+    .m_axi_rready_o     (m_axi_rready     ),
+    .m_axi_rvalid_i     (m_axi_rvalid     ),
+    .m_axi_rid_i        (m_axi_rid        ),
+    .m_axi_rdata_i      (m_axi_rdata      ),
+    .m_axi_rresp_i      (m_axi_rresp      ),
+    .m_axi_rlast_i      (m_axi_rlast      ),
+    .m_axi_ruser_i      (m_axi_ruser      )
+    );
+
+endmodule
