@@ -15,9 +15,9 @@ Warning-[ILLGO] Invalid option used
   Invalid option '-2012' must be ignored.
   Please check vcs -help for supported options.
 
-Parsing design file '../common/host_inter.v'
+Parsing design file '../common/host_inter.sv'
 Parsing included file '../../../modules/define/define.v'.
-Back to file '../common/host_inter.v'.
+Back to file '../common/host_inter.sv'.
 Parsing design file '../common/test_gpu_axi_top.sv'
 Parsing included file '../../../modules/define/define.v'.
 Back to file '../common/test_gpu_axi_top.sv'.
@@ -187,9 +187,9 @@ Back to file '../../../modules/gpgpu_top/sm/pipeline/fpu/vfpu_v2.v'.
 Parsing design file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpuexe.v'
 Parsing included file '../../../modules/define/define.v'.
 Back to file '../../../modules/gpgpu_top/sm/pipeline/fpu/fpuexe.v'.
-Parsing design file '../../../modules/gpgpu_top/sm/pipeline/operand_collector/crossbar.v'
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/operand_collector/crossbar.sv'
 Parsing included file '../../../modules/define/define.v'.
-Back to file '../../../modules/gpgpu_top/sm/pipeline/operand_collector/crossbar.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/operand_collector/crossbar.sv'.
 Parsing design file '../../../modules/gpgpu_top/sm/pipeline/operand_collector/inst_demux.v'
 Parsing included file '../../../modules/define/define.v'.
 Back to file '../../../modules/gpgpu_top/sm/pipeline/operand_collector/inst_demux.v'.
@@ -204,9 +204,9 @@ Warning-[IPDW] Identifier previously declared
   [../../../modules/gpgpu_top/sm/pipeline/operand_collector/operand_arbiter.v,
   274]
 
-Parsing design file '../../../modules/gpgpu_top/sm/pipeline/operand_collector/operandcollector_top.v'
+Parsing design file '../../../modules/gpgpu_top/sm/pipeline/operand_collector/operandcollector_top.sv'
 Parsing included file '../../../modules/define/define.v'.
-Back to file '../../../modules/gpgpu_top/sm/pipeline/operand_collector/operandcollector_top.v'.
+Back to file '../../../modules/gpgpu_top/sm/pipeline/operand_collector/operandcollector_top.sv'.
 Parsing design file '../../../modules/gpgpu_top/sm/pipeline/operand_collector/collector_unit.v'
 Parsing included file '../../../modules/define/define.v'.
 Back to file '../../../modules/gpgpu_top/sm/pipeline/operand_collector/collector_unit.v'.
@@ -402,9 +402,9 @@ Back to file '../../../modules/gpgpu_top/sm/cta2warp.v'.
 Parsing design file '../../../modules/gpgpu_top/sm/l1cache_arb.v'
 Parsing included file '../../../modules/define/define.v'.
 Back to file '../../../modules/gpgpu_top/sm/l1cache_arb.v'.
-Parsing design file '../../../modules/gpgpu_top/gpgpu_axi_top.v'
+Parsing design file '../../../modules/gpgpu_top/gpgpu_axi_top.sv'
 Parsing included file '../../../modules/define/define.v'.
-Back to file '../../../modules/gpgpu_top/gpgpu_axi_top.v'.
+Back to file '../../../modules/gpgpu_top/gpgpu_axi_top.sv'.
 Parsing design file '../../../modules/gpgpu_top/sm2cluster_arb.v'
 Parsing included file '../../../modules/define/define.v'.
 Back to file '../../../modules/gpgpu_top/sm2cluster_arb.v'.

@@ -69,10 +69,10 @@
 ../../../src/gpgpu_top/sm/pipeline/fpu/fpu_no_ctrl/fadd_pipe_no_ctrl.v
 ../../../src/gpgpu_top/sm/pipeline/fpu/vfpu_v2.v
 ../../../src/gpgpu_top/sm/pipeline/fpu/fpuexe.v
-../../../src/gpgpu_top/sm/pipeline/operand_collector/crossbar.v
+../../../src/gpgpu_top/sm/pipeline/operand_collector/crossbar.sv
 ../../../src/gpgpu_top/sm/pipeline/operand_collector/inst_demux.v
 ../../../src/gpgpu_top/sm/pipeline/operand_collector/operand_arbiter.v
-../../../src/gpgpu_top/sm/pipeline/operand_collector/operandcollector_top.v
+../../../src/gpgpu_top/sm/pipeline/operand_collector/operandcollector_top.sv
 ../../../src/gpgpu_top/sm/pipeline/operand_collector/collector_unit.v
 ../../../src/gpgpu_top/sm/pipeline/operand_collector/vector_regfile_bank.v
 ../../../src/gpgpu_top/sm/pipeline/operand_collector/gen_imm.v
@@ -140,7 +140,7 @@
 ../../../src/gpgpu_top/sm/sm_wrapper.v
 ../../../src/gpgpu_top/sm/cta2warp.v
 ../../../src/gpgpu_top/sm/l1cache_arb.v
-../../../src/gpgpu_top/gpgpu_axi_top.v
+../../../src/gpgpu_top/gpgpu_axi_top.sv
 ../../../src/gpgpu_top/sm2cluster_arb.v
 ../../../src/gpgpu_top/axi4lite_2_cta.v
 ../../../src/gpgpu_top/l2_distribute.v
