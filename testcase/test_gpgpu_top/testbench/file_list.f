@@ -118,11 +118,11 @@
 ../../../src/gpgpu_top/sm/pipeline/lsu/shiftboard.v
 ../../../src/gpgpu_top/sm/pipeline/issue.v
 ../../../src/gpgpu_top/sm/pipeline/operand_collector/collector_unit.v
-../../../src/gpgpu_top/sm/pipeline/operand_collector/crossbar.v
+../../../src/gpgpu_top/sm/pipeline/operand_collector/crossbar.sv
 ../../../src/gpgpu_top/sm/pipeline/operand_collector/gen_imm.v
 ../../../src/gpgpu_top/sm/pipeline/operand_collector/inst_demux.v
 ../../../src/gpgpu_top/sm/pipeline/operand_collector/operand_arbiter.v
-../../../src/gpgpu_top/sm/pipeline/operand_collector/operandcollector_top.v
+../../../src/gpgpu_top/sm/pipeline/operand_collector/operandcollector_top.sv
 ../../../src/gpgpu_top/sm/pipeline/operand_collector/scalar_regfile_bank.v
 ../../../src/gpgpu_top/sm/pipeline/operand_collector/vector_regfile_bank.v
 ../../../src/gpgpu_top/sm/pipeline/sfu_v2/float_div_mvp/cf_math_pkg.sv
@@ -175,7 +175,7 @@
 ../testbench/test_gpu_top_hgx.sv
 ../testbench/gen_clk.v
 ../testbench/gen_rst.v
-../testbench/host_inter.v
+../testbench/host_inter.sv
 ../testbench/mem_inter.v
 ./tc.v
 //./gen_print.v
